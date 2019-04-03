@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE0_TOP
-Mon Apr 01 16:36:43 2019
+Tue Apr 02 23:41:43 2019
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -13,19 +13,17 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Inverted Register Statistics
- 11. Parameter Settings for User Entity Instance: button_debouncer:button_debouncer_inst0
- 12. Parameter Settings for User Entity Instance: button_debouncer:button_debouncer_inst1
- 13. Parameter Settings for User Entity Instance: button_debouncer:button_debouncer_inst2
- 14. Parameter Settings for User Entity Instance: led_thing:led_thing_inst0
- 15. Parameter Settings for User Entity Instance: lcd_thing:lcd_thing_inst0
- 16. Port Connectivity Checks: "button_debouncer:button_debouncer_inst2"
- 17. Port Connectivity Checks: "button_debouncer:button_debouncer_inst1"
- 18. Port Connectivity Checks: "button_debouncer:button_debouncer_inst0"
- 19. Elapsed Time Per Partition
- 20. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Parameter Settings for User Entity Instance: button_debouncer:button_debouncer_inst0
+ 10. Parameter Settings for User Entity Instance: button_debouncer:button_debouncer_inst1
+ 11. Parameter Settings for User Entity Instance: button_debouncer:button_debouncer_inst2
+ 12. Parameter Settings for User Entity Instance: led_thing:led_thing_inst0
+ 13. Parameter Settings for User Entity Instance: lcd_thing:lcd_thing_inst0
+ 14. Port Connectivity Checks: "button_debouncer:button_debouncer_inst2"
+ 15. Port Connectivity Checks: "button_debouncer:button_debouncer_inst1"
+ 16. Port Connectivity Checks: "button_debouncer:button_debouncer_inst0"
+ 17. Elapsed Time Per Partition
+ 18. Analysis & Synthesis Messages
 
 
 
@@ -51,15 +49,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Apr 01 16:36:43 2019      ;
+; Analysis & Synthesis Status        ; Successful - Tue Apr 02 23:41:43 2019      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; DE0_TOP                                    ;
 ; Top-level Entity Name              ; DE0_TOP                                    ;
 ; Family                             ; Cyclone III                                ;
-; Total logic elements               ; 63                                         ;
-;     Total combinational functions  ; 57                                         ;
-;     Dedicated logic registers      ; 39                                         ;
-; Total registers                    ; 39                                         ;
+; Total logic elements               ; 54                                         ;
+;     Total combinational functions  ; 53                                         ;
+;     Dedicated logic registers      ; 30                                         ;
+; Total registers                    ; 30                                         ;
 ; Total pins                         ; 252                                        ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
@@ -171,10 +169,10 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                         ; Library ;
 +----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------+---------+
-; lcd_thing.v                      ; yes             ; User Verilog HDL File        ; C:/Users/tyler/Downloads/DE0_Debounce/DE0_TOP_New/lcd_thing.v        ;         ;
-; de0_top.v                        ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/tyler/Downloads/DE0_Debounce/DE0_TOP_New/de0_top.v          ;         ;
-; button_debouncer.v               ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/tyler/Downloads/DE0_Debounce/DE0_TOP_New/button_debouncer.v ;         ;
-; led_thing.v                      ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/tyler/Downloads/DE0_Debounce/DE0_TOP_New/led_thing.v        ;         ;
+; lcd_thing.v                      ; yes             ; User Verilog HDL File        ; C:/Users/tyler/OneDrive/Documents/GitHub/debounce/lcd_thing.v        ;         ;
+; de0_top.v                        ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/tyler/OneDrive/Documents/GitHub/debounce/de0_top.v          ;         ;
+; button_debouncer.v               ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/tyler/OneDrive/Documents/GitHub/debounce/button_debouncer.v ;         ;
+; led_thing.v                      ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/tyler/OneDrive/Documents/GitHub/debounce/led_thing.v        ;         ;
 +----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------+---------+
 
 
@@ -183,28 +181,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 63             ;
+; Estimated Total logic elements              ; 54             ;
 ;                                             ;                ;
-; Total combinational functions               ; 57             ;
+; Total combinational functions               ; 53             ;
 ; Logic element usage by number of LUT inputs ;                ;
 ;     -- 4 input functions                    ; 9              ;
 ;     -- 3 input functions                    ; 15             ;
-;     -- <=2 input functions                  ; 33             ;
+;     -- <=2 input functions                  ; 29             ;
 ;                                             ;                ;
 ; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 31             ;
+;     -- normal mode                          ; 27             ;
 ;     -- arithmetic mode                      ; 26             ;
 ;                                             ;                ;
-; Total registers                             ; 39             ;
-;     -- Dedicated logic registers            ; 39             ;
+; Total registers                             ; 30             ;
+;     -- Dedicated logic registers            ; 30             ;
 ;     -- I/O registers                        ; 0              ;
 ;                                             ;                ;
 ; I/O pins                                    ; 252            ;
 ; Embedded Multiplier 9-bit elements          ; 0              ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 39             ;
-; Total fan-out                               ; 593            ;
-; Average fan-out                             ; 0.83           ;
+; Maximum fan-out                             ; 30             ;
+; Total fan-out                               ; 562            ;
+; Average fan-out                             ; 0.81           ;
 +---------------------------------------------+----------------+
 
 
@@ -213,51 +211,10 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------+--------------+
 ; Compilation Hierarchy Node     ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                ; Library Name ;
 +--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------+--------------+
-; |DE0_TOP                       ; 57 (0)            ; 39 (0)       ; 0           ; 0            ; 0       ; 0         ; 252  ; 0            ; |DE0_TOP                           ; work         ;
-;    |lcd_thing:lcd_thing_inst0| ; 57 (57)           ; 38 (38)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_TOP|lcd_thing:lcd_thing_inst0 ; work         ;
-;    |led_thing:led_thing_inst0| ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_TOP|led_thing:led_thing_inst0 ; work         ;
+; |DE0_TOP                       ; 53 (0)            ; 30 (0)       ; 0           ; 0            ; 0       ; 0         ; 252  ; 0            ; |DE0_TOP                           ; work         ;
+;    |led_thing:led_thing_inst0| ; 53 (53)           ; 30 (30)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_TOP|led_thing:led_thing_inst0 ; work         ;
 +--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+--------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                         ;
-+----------------------------------------+---------------------------------------------------+
-; Register name                          ; Reason for Removal                                ;
-+----------------------------------------+---------------------------------------------------+
-; lcd_thing:lcd_thing_inst0|val[0,2,6]   ; Merged with lcd_thing:lcd_thing_inst0|val[4]      ;
-; lcd_thing:lcd_thing_inst0|val[1,5,7]   ; Merged with lcd_thing:lcd_thing_inst0|val[3]      ;
-; led_thing:led_thing_inst0|val          ; Merged with lcd_thing:lcd_thing_inst0|val[4]      ;
-; led_thing:led_thing_inst0|ck_stb       ; Merged with lcd_thing:lcd_thing_inst0|ck_stb      ;
-; led_thing:led_thing_inst0|counter[24]  ; Merged with lcd_thing:lcd_thing_inst0|counter[24] ;
-; led_thing:led_thing_inst0|counter[22]  ; Merged with lcd_thing:lcd_thing_inst0|counter[22] ;
-; led_thing:led_thing_inst0|counter[21]  ; Merged with lcd_thing:lcd_thing_inst0|counter[21] ;
-; led_thing:led_thing_inst0|counter[20]  ; Merged with lcd_thing:lcd_thing_inst0|counter[20] ;
-; led_thing:led_thing_inst0|counter[19]  ; Merged with lcd_thing:lcd_thing_inst0|counter[19] ;
-; led_thing:led_thing_inst0|counter[18]  ; Merged with lcd_thing:lcd_thing_inst0|counter[18] ;
-; led_thing:led_thing_inst0|counter[16]  ; Merged with lcd_thing:lcd_thing_inst0|counter[16] ;
-; led_thing:led_thing_inst0|counter[14]  ; Merged with lcd_thing:lcd_thing_inst0|counter[14] ;
-; led_thing:led_thing_inst0|counter[13]  ; Merged with lcd_thing:lcd_thing_inst0|counter[13] ;
-; led_thing:led_thing_inst0|counter[12]  ; Merged with lcd_thing:lcd_thing_inst0|counter[12] ;
-; led_thing:led_thing_inst0|counter[11]  ; Merged with lcd_thing:lcd_thing_inst0|counter[11] ;
-; led_thing:led_thing_inst0|counter[5]   ; Merged with lcd_thing:lcd_thing_inst0|counter[5]  ;
-; led_thing:led_thing_inst0|counter[4]   ; Merged with lcd_thing:lcd_thing_inst0|counter[4]  ;
-; led_thing:led_thing_inst0|counter[3]   ; Merged with lcd_thing:lcd_thing_inst0|counter[3]  ;
-; led_thing:led_thing_inst0|counter[2]   ; Merged with lcd_thing:lcd_thing_inst0|counter[2]  ;
-; led_thing:led_thing_inst0|counter[1]   ; Merged with lcd_thing:lcd_thing_inst0|counter[1]  ;
-; led_thing:led_thing_inst0|counter[0]   ; Merged with lcd_thing:lcd_thing_inst0|counter[0]  ;
-; led_thing:led_thing_inst0|counter[26]  ; Merged with lcd_thing:lcd_thing_inst0|counter[26] ;
-; led_thing:led_thing_inst0|counter[25]  ; Merged with lcd_thing:lcd_thing_inst0|counter[25] ;
-; led_thing:led_thing_inst0|counter[23]  ; Merged with lcd_thing:lcd_thing_inst0|counter[23] ;
-; led_thing:led_thing_inst0|counter[17]  ; Merged with lcd_thing:lcd_thing_inst0|counter[17] ;
-; led_thing:led_thing_inst0|counter[15]  ; Merged with lcd_thing:lcd_thing_inst0|counter[15] ;
-; led_thing:led_thing_inst0|counter[10]  ; Merged with lcd_thing:lcd_thing_inst0|counter[10] ;
-; led_thing:led_thing_inst0|counter[9]   ; Merged with lcd_thing:lcd_thing_inst0|counter[9]  ;
-; led_thing:led_thing_inst0|counter[8]   ; Merged with lcd_thing:lcd_thing_inst0|counter[8]  ;
-; led_thing:led_thing_inst0|counter[7]   ; Merged with lcd_thing:lcd_thing_inst0|counter[7]  ;
-; led_thing:led_thing_inst0|counter[6]   ; Merged with lcd_thing:lcd_thing_inst0|counter[6]  ;
-; Total Number of Removed Registers = 35 ;                                                   ;
-+----------------------------------------+---------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -265,25 +222,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 39    ;
+; Total registers                              ; 30    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 2     ;
+; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
-
-
-+------------------------------------------------------+
-; Inverted Register Statistics                         ;
-+--------------------------------------------+---------+
-; Inverted Register                          ; Fan out ;
-+--------------------------------------------+---------+
-; lcd_thing:lcd_thing_inst0|data_out[7]~reg0 ; 1       ;
-; lcd_thing:lcd_thing_inst0|val[3]           ; 5       ;
-; Total number of inverted registers = 2     ;         ;
-+--------------------------------------------+---------+
 
 
 +--------------------------------------------------------------------------------------+
@@ -332,12 +278,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 +------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: lcd_thing:lcd_thing_inst0 ;
-+----------------+----------+--------------------------------------------+
-; Parameter Name ; Value    ; Type                                       ;
-+----------------+----------+--------------------------------------------+
-; preset_val     ; 0        ; Signed Integer                             ;
-; counter_max    ; 25000000 ; Signed Integer                             ;
-+----------------+----------+--------------------------------------------+
++----------------+-----------+-------------------------------------------+
+; Parameter Name ; Value     ; Type                                      ;
++----------------+-----------+-------------------------------------------+
+; preset_val     ; 0         ; Signed Integer                            ;
+; counter_max    ; 500000000 ; Signed Integer                            ;
++----------------+-----------+-------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -386,7 +332,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Mon Apr 01 16:36:41 2019
+    Info: Processing started: Tue Apr 02 23:41:41 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE0_TOP -c DE0_TOP
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file lcd_thing.v
@@ -444,16 +390,15 @@ Warning (12125): Using design file led_thing.v, which is not specified as a desi
 Info (12128): Elaborating entity "led_thing" for hierarchy "led_thing:led_thing_inst0"
 Info (12128): Elaborating entity "lcd_thing" for hierarchy "lcd_thing:lcd_thing_inst0"
 Warning (10036): Verilog HDL or VHDL warning at lcd_thing.v(40): object "busy" assigned a value but never read
-Warning (13034): The following nodes have both tri-state and non-tri-state drivers
-    Warning (13035): Inserted always-enabled tri-state buffer between "LCD_DATA[0]" and its non-tri-state driver.
-    Warning (13035): Inserted always-enabled tri-state buffer between "LCD_DATA[1]" and its non-tri-state driver.
-    Warning (13035): Inserted always-enabled tri-state buffer between "LCD_DATA[2]" and its non-tri-state driver.
-    Warning (13035): Inserted always-enabled tri-state buffer between "LCD_DATA[3]" and its non-tri-state driver.
-    Warning (13035): Inserted always-enabled tri-state buffer between "LCD_DATA[4]" and its non-tri-state driver.
-    Warning (13035): Inserted always-enabled tri-state buffer between "LCD_DATA[5]" and its non-tri-state driver.
-    Warning (13035): Inserted always-enabled tri-state buffer between "LCD_DATA[6]" and its non-tri-state driver.
-    Warning (13035): Inserted always-enabled tri-state buffer between "LCD_DATA[7]" and its non-tri-state driver.
 Warning (13039): The following bidir pins have no drivers
+    Warning (13040): Bidir "LCD_DATA[0]" has no driver
+    Warning (13040): Bidir "LCD_DATA[1]" has no driver
+    Warning (13040): Bidir "LCD_DATA[2]" has no driver
+    Warning (13040): Bidir "LCD_DATA[3]" has no driver
+    Warning (13040): Bidir "LCD_DATA[4]" has no driver
+    Warning (13040): Bidir "LCD_DATA[5]" has no driver
+    Warning (13040): Bidir "LCD_DATA[6]" has no driver
+    Warning (13040): Bidir "LCD_DATA[7]" has no driver
     Warning (13040): Bidir "DRAM_DQ[0]" has no driver
     Warning (13040): Bidir "DRAM_DQ[1]" has no driver
     Warning (13040): Bidir "DRAM_DQ[2]" has no driver
@@ -557,15 +502,6 @@ Warning (13039): The following bidir pins have no drivers
     Warning (13040): Bidir "GPIO1_D[29]" has no driver
     Warning (13040): Bidir "GPIO1_D[30]" has no driver
     Warning (13040): Bidir "GPIO1_D[31]" has no driver
-Warning (13009): TRI or OPNDRN buffers permanently enabled
-    Warning (13010): Node "LCD_DATA[0]~synth"
-    Warning (13010): Node "LCD_DATA[1]~synth"
-    Warning (13010): Node "LCD_DATA[2]~synth"
-    Warning (13010): Node "LCD_DATA[3]~synth"
-    Warning (13010): Node "LCD_DATA[4]~synth"
-    Warning (13010): Node "LCD_DATA[5]~synth"
-    Warning (13010): Node "LCD_DATA[6]~synth"
-    Warning (13010): Node "LCD_DATA[7]~synth"
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "HEX0_D[0]" is stuck at GND
     Warning (13410): Pin "HEX0_D[1]" is stuck at GND
@@ -663,7 +599,7 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "FL_BYTE_N" is stuck at GND
     Warning (13410): Pin "LCD_BLON" is stuck at VCC
     Warning (13410): Pin "LCD_RW" is stuck at GND
-    Warning (13410): Pin "LCD_EN" is stuck at GND
+    Warning (13410): Pin "LCD_EN" is stuck at VCC
     Warning (13410): Pin "LCD_RS" is stuck at VCC
     Warning (13410): Pin "SD_CLK" is stuck at GND
     Warning (13410): Pin "VGA_HS" is stuck at GND
@@ -710,14 +646,14 @@ Warning (21074): Design contains 22 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "GPIO0_CLKIN[1]"
     Warning (15610): No output dependent on input pin "GPIO1_CLKIN[0]"
     Warning (15610): No output dependent on input pin "GPIO1_CLKIN[1]"
-Info (21057): Implemented 315 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 306 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 23 input pins
     Info (21059): Implemented 118 output pins
     Info (21060): Implemented 111 bidirectional pins
-    Info (21061): Implemented 63 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 309 warnings
-    Info: Peak virtual memory: 4647 megabytes
-    Info: Processing ended: Mon Apr 01 16:36:43 2019
+    Info (21061): Implemented 54 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 299 warnings
+    Info: Peak virtual memory: 4643 megabytes
+    Info: Processing ended: Tue Apr 02 23:41:43 2019
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 

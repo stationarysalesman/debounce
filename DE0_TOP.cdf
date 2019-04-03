@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP3C16F484) Path("C:/Users/tyler/Downloads/DE0_Debounce/DE0_TOP_New/") File("DE0_TOP.sof") MfrSpec(OpMask(1));
+		Device PartName(EP3C16F484) Path("C:/Users/tyler/OneDrive/Documents/GitHub/debounce/") File("DE0_TOP.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 
