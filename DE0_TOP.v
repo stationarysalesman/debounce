@@ -206,7 +206,8 @@ inout	[31:0]	GPIO1_D;				//	GPIO Connection 1 Data Bus
 //=======================================================
 wire	[2:0]	BUTTON; // Button after debounce
 
-reg [7:0] FRACTION; // fraction number
+wire [7:0] FRACTION_TENS; // fraction number
+wire [7:0] FRACTION_ONES; // two base-ten digits :p
 wire [7:0] TIME_VEC[1:5]; // will hold hex codes for timer
 //=======================================================
 //  Button Debounce Circit 
@@ -247,7 +248,8 @@ led_thing led_thing_inst0(
 
 lcd_thing lcd_thing_inst0(
 	.clk(CLOCK_50),
-	.fraction(FRACTION),
+	.fraction_tens(FRACTION_TENS),
+	.fraction_ones(FRACTION_ONES),
 	.start(SW[0]),
 	.time_vec1(TIME_VEC[1]),
 	.time_vec2(TIME_VEC[2]),
@@ -268,7 +270,9 @@ timer_thing timer_thing_inst0(
 	.time_vec2(TIME_VEC[2]),
 	.time_vec3(TIME_VEC[3]),
 	.time_vec4(TIME_VEC[4]),
-	.time_vec5(TIME_VEC[5])
+	.time_vec5(TIME_VEC[5]),
+	.fraction_tens(FRACTION_TENS),
+	.fraction_ones(FRACTION_ONES)
 	);
 	
 	/*

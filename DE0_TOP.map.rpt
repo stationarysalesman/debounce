@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE0_TOP
-Wed Apr 03 23:41:01 2019
+Thu Apr 04 00:11:32 2019
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -23,17 +23,20 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
  15. Parameter Settings for User Entity Instance: button_debouncer:button_debouncer_inst2
  16. Parameter Settings for User Entity Instance: lcd_thing:lcd_thing_inst0
  17. Parameter Settings for User Entity Instance: timer_thing:timer_thing_inst0
- 18. Parameter Settings for Inferred Entity Instance: timer_thing:timer_thing_inst0|lpm_divide:Div2
- 19. Parameter Settings for Inferred Entity Instance: timer_thing:timer_thing_inst0|lpm_divide:Mod1
- 20. Parameter Settings for Inferred Entity Instance: timer_thing:timer_thing_inst0|lpm_divide:Mod2
+ 18. Parameter Settings for Inferred Entity Instance: timer_thing:timer_thing_inst0|lpm_divide:Div3
+ 19. Parameter Settings for Inferred Entity Instance: timer_thing:timer_thing_inst0|lpm_divide:Div4
+ 20. Parameter Settings for Inferred Entity Instance: timer_thing:timer_thing_inst0|lpm_divide:Mod3
  21. Parameter Settings for Inferred Entity Instance: timer_thing:timer_thing_inst0|lpm_divide:Div1
- 22. Parameter Settings for Inferred Entity Instance: timer_thing:timer_thing_inst0|lpm_divide:Mod0
- 23. Parameter Settings for Inferred Entity Instance: timer_thing:timer_thing_inst0|lpm_divide:Div0
- 24. Port Connectivity Checks: "button_debouncer:button_debouncer_inst2"
- 25. Port Connectivity Checks: "button_debouncer:button_debouncer_inst1"
- 26. Port Connectivity Checks: "button_debouncer:button_debouncer_inst0"
- 27. Elapsed Time Per Partition
- 28. Analysis & Synthesis Messages
+ 22. Parameter Settings for Inferred Entity Instance: timer_thing:timer_thing_inst0|lpm_divide:Div2
+ 23. Parameter Settings for Inferred Entity Instance: timer_thing:timer_thing_inst0|lpm_divide:Mod1
+ 24. Parameter Settings for Inferred Entity Instance: timer_thing:timer_thing_inst0|lpm_divide:Mod2
+ 25. Parameter Settings for Inferred Entity Instance: timer_thing:timer_thing_inst0|lpm_divide:Div0
+ 26. Parameter Settings for Inferred Entity Instance: timer_thing:timer_thing_inst0|lpm_divide:Mod0
+ 27. Port Connectivity Checks: "button_debouncer:button_debouncer_inst2"
+ 28. Port Connectivity Checks: "button_debouncer:button_debouncer_inst1"
+ 29. Port Connectivity Checks: "button_debouncer:button_debouncer_inst0"
+ 30. Elapsed Time Per Partition
+ 31. Analysis & Synthesis Messages
 
 
 
@@ -59,15 +62,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Apr 03 23:41:01 2019      ;
+; Analysis & Synthesis Status        ; Successful - Thu Apr 04 00:11:31 2019      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; DE0_TOP                                    ;
 ; Top-level Entity Name              ; DE0_TOP                                    ;
 ; Family                             ; Cyclone III                                ;
-; Total logic elements               ; 1,341                                      ;
-;     Total combinational functions  ; 1,314                                      ;
-;     Dedicated logic registers      ; 188                                        ;
-; Total registers                    ; 188                                        ;
+; Total logic elements               ; 2,446                                      ;
+;     Total combinational functions  ; 2,409                                      ;
+;     Dedicated logic registers      ; 209                                        ;
+; Total registers                    ; 209                                        ;
 ; Total pins                         ; 252                                        ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
@@ -187,20 +190,24 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/altera/13.1/quartus/libraries/megafunctions/abs_divider.inc               ;         ;
 ; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/altera/13.1/quartus/libraries/megafunctions/sign_div_unsign.inc           ;         ;
 ; aglobal131.inc                   ; yes             ; Megafunction                 ; c:/altera/13.1/quartus/libraries/megafunctions/aglobal131.inc                ;         ;
+; db/lpm_divide_nhm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/tyler/OneDrive/Documents/GitHub/debounce/db/lpm_divide_nhm.tdf      ;         ;
+; db/sign_div_unsign_olh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/tyler/OneDrive/Documents/GitHub/debounce/db/sign_div_unsign_olh.tdf ;         ;
+; db/alt_u_div_r5f.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/tyler/OneDrive/Documents/GitHub/debounce/db/alt_u_div_r5f.tdf       ;         ;
+; db/add_sub_unc.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/tyler/OneDrive/Documents/GitHub/debounce/db/add_sub_unc.tdf         ;         ;
+; db/add_sub_vnc.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/tyler/OneDrive/Documents/GitHub/debounce/db/add_sub_vnc.tdf         ;         ;
+; db/lpm_divide_q9m.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/tyler/OneDrive/Documents/GitHub/debounce/db/lpm_divide_q9m.tdf      ;         ;
+; db/lpm_divide_7gm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/tyler/OneDrive/Documents/GitHub/debounce/db/lpm_divide_7gm.tdf      ;         ;
+; db/sign_div_unsign_8kh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/tyler/OneDrive/Documents/GitHub/debounce/db/sign_div_unsign_8kh.tdf ;         ;
+; db/alt_u_div_r2f.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/tyler/OneDrive/Documents/GitHub/debounce/db/alt_u_div_r2f.tdf       ;         ;
 ; db/lpm_divide_8gm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/tyler/OneDrive/Documents/GitHub/debounce/db/lpm_divide_8gm.tdf      ;         ;
 ; db/sign_div_unsign_9kh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/tyler/OneDrive/Documents/GitHub/debounce/db/sign_div_unsign_9kh.tdf ;         ;
 ; db/alt_u_div_t2f.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/tyler/OneDrive/Documents/GitHub/debounce/db/alt_u_div_t2f.tdf       ;         ;
-; db/add_sub_unc.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/tyler/OneDrive/Documents/GitHub/debounce/db/add_sub_unc.tdf         ;         ;
-; db/add_sub_vnc.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/tyler/OneDrive/Documents/GitHub/debounce/db/add_sub_vnc.tdf         ;         ;
 ; db/lpm_divide_a8m.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/tyler/OneDrive/Documents/GitHub/debounce/db/lpm_divide_a8m.tdf      ;         ;
-; db/sign_div_unsign_8kh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/tyler/OneDrive/Documents/GitHub/debounce/db/sign_div_unsign_8kh.tdf ;         ;
-; db/alt_u_div_r2f.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/tyler/OneDrive/Documents/GitHub/debounce/db/alt_u_div_r2f.tdf       ;         ;
 ; db/lpm_divide_b8m.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/tyler/OneDrive/Documents/GitHub/debounce/db/lpm_divide_b8m.tdf      ;         ;
-; db/lpm_divide_7gm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/tyler/OneDrive/Documents/GitHub/debounce/db/lpm_divide_7gm.tdf      ;         ;
-; db/lpm_divide_s9m.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/tyler/OneDrive/Documents/GitHub/debounce/db/lpm_divide_s9m.tdf      ;         ;
+; db/lpm_divide_phm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/tyler/OneDrive/Documents/GitHub/debounce/db/lpm_divide_phm.tdf      ;         ;
 ; db/sign_div_unsign_qlh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/tyler/OneDrive/Documents/GitHub/debounce/db/sign_div_unsign_qlh.tdf ;         ;
 ; db/alt_u_div_v5f.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/tyler/OneDrive/Documents/GitHub/debounce/db/alt_u_div_v5f.tdf       ;         ;
-; db/lpm_divide_phm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/tyler/OneDrive/Documents/GitHub/debounce/db/lpm_divide_phm.tdf      ;         ;
+; db/lpm_divide_s9m.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/tyler/OneDrive/Documents/GitHub/debounce/db/lpm_divide_s9m.tdf      ;         ;
 +----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------+---------+
 
 
@@ -209,28 +216,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 1,341          ;
+; Estimated Total logic elements              ; 2,446          ;
 ;                                             ;                ;
-; Total combinational functions               ; 1314           ;
+; Total combinational functions               ; 2409           ;
 ; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 284            ;
-;     -- 3 input functions                    ; 311            ;
-;     -- <=2 input functions                  ; 719            ;
+;     -- 4 input functions                    ; 510            ;
+;     -- 3 input functions                    ; 619            ;
+;     -- <=2 input functions                  ; 1280           ;
 ;                                             ;                ;
 ; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 892            ;
-;     -- arithmetic mode                      ; 422            ;
+;     -- normal mode                          ; 1636           ;
+;     -- arithmetic mode                      ; 773            ;
 ;                                             ;                ;
-; Total registers                             ; 188            ;
-;     -- Dedicated logic registers            ; 188            ;
+; Total registers                             ; 209            ;
+;     -- Dedicated logic registers            ; 209            ;
 ;     -- I/O registers                        ; 0              ;
 ;                                             ;                ;
 ; I/O pins                                    ; 252            ;
 ; Embedded Multiplier 9-bit elements          ; 0              ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 188            ;
-; Total fan-out                               ; 4191           ;
-; Average fan-out                             ; 1.98           ;
+; Maximum fan-out                             ; 209            ;
+; Total fan-out                               ; 6975           ;
+; Average fan-out                             ; 2.16           ;
 +---------------------------------------------+----------------+
 
 
@@ -239,13 +246,13 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                    ; Library Name ;
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |DE0_TOP                                  ; 1314 (0)          ; 188 (0)      ; 0           ; 0            ; 0       ; 0         ; 252  ; 0            ; |DE0_TOP                                                                                                                               ; work         ;
-;    |lcd_thing:lcd_thing_inst0|            ; 202 (202)         ; 91 (91)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_TOP|lcd_thing:lcd_thing_inst0                                                                                                     ; work         ;
-;    |timer_thing:timer_thing_inst0|        ; 1112 (107)        ; 97 (97)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_TOP|timer_thing:timer_thing_inst0                                                                                                 ; work         ;
-;       |lpm_divide:Div0|                   ; 490 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_TOP|timer_thing:timer_thing_inst0|lpm_divide:Div0                                                                                 ; work         ;
-;          |lpm_divide_phm:auto_generated|  ; 490 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_TOP|timer_thing:timer_thing_inst0|lpm_divide:Div0|lpm_divide_phm:auto_generated                                                   ; work         ;
-;             |sign_div_unsign_qlh:divider| ; 490 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_TOP|timer_thing:timer_thing_inst0|lpm_divide:Div0|lpm_divide_phm:auto_generated|sign_div_unsign_qlh:divider                       ; work         ;
-;                |alt_u_div_v5f:divider|    ; 490 (490)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_TOP|timer_thing:timer_thing_inst0|lpm_divide:Div0|lpm_divide_phm:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_v5f:divider ; work         ;
+; |DE0_TOP                                  ; 2409 (0)          ; 209 (0)      ; 0           ; 0            ; 0       ; 0         ; 252  ; 0            ; |DE0_TOP                                                                                                                               ; work         ;
+;    |lcd_thing:lcd_thing_inst0|            ; 210 (210)         ; 101 (101)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_TOP|lcd_thing:lcd_thing_inst0                                                                                                     ; work         ;
+;    |timer_thing:timer_thing_inst0|        ; 2199 (117)        ; 108 (108)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_TOP|timer_thing:timer_thing_inst0                                                                                                 ; work         ;
+;       |lpm_divide:Div0|                   ; 466 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_TOP|timer_thing:timer_thing_inst0|lpm_divide:Div0                                                                                 ; work         ;
+;          |lpm_divide_phm:auto_generated|  ; 466 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_TOP|timer_thing:timer_thing_inst0|lpm_divide:Div0|lpm_divide_phm:auto_generated                                                   ; work         ;
+;             |sign_div_unsign_qlh:divider| ; 466 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_TOP|timer_thing:timer_thing_inst0|lpm_divide:Div0|lpm_divide_phm:auto_generated|sign_div_unsign_qlh:divider                       ; work         ;
+;                |alt_u_div_v5f:divider|    ; 466 (466)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_TOP|timer_thing:timer_thing_inst0|lpm_divide:Div0|lpm_divide_phm:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_v5f:divider ; work         ;
 ;       |lpm_divide:Div1|                   ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_TOP|timer_thing:timer_thing_inst0|lpm_divide:Div1                                                                                 ; work         ;
 ;          |lpm_divide_7gm:auto_generated|  ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_TOP|timer_thing:timer_thing_inst0|lpm_divide:Div1|lpm_divide_7gm:auto_generated                                                   ; work         ;
 ;             |sign_div_unsign_8kh:divider| ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_TOP|timer_thing:timer_thing_inst0|lpm_divide:Div1|lpm_divide_7gm:auto_generated|sign_div_unsign_8kh:divider                       ; work         ;
@@ -254,6 +261,14 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;          |lpm_divide_8gm:auto_generated|  ; 25 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_TOP|timer_thing:timer_thing_inst0|lpm_divide:Div2|lpm_divide_8gm:auto_generated                                                   ; work         ;
 ;             |sign_div_unsign_9kh:divider| ; 25 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_TOP|timer_thing:timer_thing_inst0|lpm_divide:Div2|lpm_divide_8gm:auto_generated|sign_div_unsign_9kh:divider                       ; work         ;
 ;                |alt_u_div_t2f:divider|    ; 25 (25)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_TOP|timer_thing:timer_thing_inst0|lpm_divide:Div2|lpm_divide_8gm:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_t2f:divider ; work         ;
+;       |lpm_divide:Div3|                   ; 395 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_TOP|timer_thing:timer_thing_inst0|lpm_divide:Div3                                                                                 ; work         ;
+;          |lpm_divide_nhm:auto_generated|  ; 395 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_TOP|timer_thing:timer_thing_inst0|lpm_divide:Div3|lpm_divide_nhm:auto_generated                                                   ; work         ;
+;             |sign_div_unsign_olh:divider| ; 395 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_TOP|timer_thing:timer_thing_inst0|lpm_divide:Div3|lpm_divide_nhm:auto_generated|sign_div_unsign_olh:divider                       ; work         ;
+;                |alt_u_div_r5f:divider|    ; 395 (395)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_TOP|timer_thing:timer_thing_inst0|lpm_divide:Div3|lpm_divide_nhm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider ; work         ;
+;       |lpm_divide:Div4|                   ; 350 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_TOP|timer_thing:timer_thing_inst0|lpm_divide:Div4                                                                                 ; work         ;
+;          |lpm_divide_nhm:auto_generated|  ; 350 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_TOP|timer_thing:timer_thing_inst0|lpm_divide:Div4|lpm_divide_nhm:auto_generated                                                   ; work         ;
+;             |sign_div_unsign_olh:divider| ; 350 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_TOP|timer_thing:timer_thing_inst0|lpm_divide:Div4|lpm_divide_nhm:auto_generated|sign_div_unsign_olh:divider                       ; work         ;
+;                |alt_u_div_r5f:divider|    ; 350 (350)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_TOP|timer_thing:timer_thing_inst0|lpm_divide:Div4|lpm_divide_nhm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider ; work         ;
 ;       |lpm_divide:Mod0|                   ; 425 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_TOP|timer_thing:timer_thing_inst0|lpm_divide:Mod0                                                                                 ; work         ;
 ;          |lpm_divide_s9m:auto_generated|  ; 425 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_TOP|timer_thing:timer_thing_inst0|lpm_divide:Mod0|lpm_divide_s9m:auto_generated                                                   ; work         ;
 ;             |sign_div_unsign_qlh:divider| ; 425 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_TOP|timer_thing:timer_thing_inst0|lpm_divide:Mod0|lpm_divide_s9m:auto_generated|sign_div_unsign_qlh:divider                       ; work         ;
@@ -266,107 +281,116 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;          |lpm_divide_b8m:auto_generated|  ; 33 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_TOP|timer_thing:timer_thing_inst0|lpm_divide:Mod2|lpm_divide_b8m:auto_generated                                                   ; work         ;
 ;             |sign_div_unsign_9kh:divider| ; 33 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_TOP|timer_thing:timer_thing_inst0|lpm_divide:Mod2|lpm_divide_b8m:auto_generated|sign_div_unsign_9kh:divider                       ; work         ;
 ;                |alt_u_div_t2f:divider|    ; 33 (33)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_TOP|timer_thing:timer_thing_inst0|lpm_divide:Mod2|lpm_divide_b8m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_t2f:divider ; work         ;
+;       |lpm_divide:Mod3|                   ; 356 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_TOP|timer_thing:timer_thing_inst0|lpm_divide:Mod3                                                                                 ; work         ;
+;          |lpm_divide_q9m:auto_generated|  ; 356 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_TOP|timer_thing:timer_thing_inst0|lpm_divide:Mod3|lpm_divide_q9m:auto_generated                                                   ; work         ;
+;             |sign_div_unsign_olh:divider| ; 356 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_TOP|timer_thing:timer_thing_inst0|lpm_divide:Mod3|lpm_divide_q9m:auto_generated|sign_div_unsign_olh:divider                       ; work         ;
+;                |alt_u_div_r5f:divider|    ; 356 (356)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_TOP|timer_thing:timer_thing_inst0|lpm_divide:Mod3|lpm_divide_q9m:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider ; work         ;
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                   ;
-+-------------------------------------------------+----------------------------------------------------+
-; Register name                                   ; Reason for Removal                                 ;
-+-------------------------------------------------+----------------------------------------------------+
-; timer_thing:timer_thing_inst0|time_vec2[4,5]    ; Stuck at VCC due to stuck port data_in             ;
-; timer_thing:timer_thing_inst0|time_vec3[6,7]    ; Stuck at GND due to stuck port data_in             ;
-; timer_thing:timer_thing_inst0|time_vec3[3..5]   ; Stuck at VCC due to stuck port data_in             ;
-; timer_thing:timer_thing_inst0|time_vec3[2]      ; Stuck at GND due to stuck port data_in             ;
-; timer_thing:timer_thing_inst0|time_vec3[1]      ; Stuck at VCC due to stuck port data_in             ;
-; timer_thing:timer_thing_inst0|time_vec3[0]      ; Stuck at GND due to stuck port data_in             ;
-; timer_thing:timer_thing_inst0|time_vec4[6,7]    ; Stuck at GND due to stuck port data_in             ;
-; timer_thing:timer_thing_inst0|time_vec4[4,5]    ; Stuck at VCC due to stuck port data_in             ;
-; timer_thing:timer_thing_inst0|time_vec5[6,7]    ; Stuck at GND due to stuck port data_in             ;
-; timer_thing:timer_thing_inst0|time_vec5[4,5]    ; Stuck at VCC due to stuck port data_in             ;
-; timer_thing:timer_thing_inst0|time_vec2[6,7]    ; Stuck at GND due to stuck port data_in             ;
-; timer_thing:timer_thing_inst0|time_vec1[4,5]    ; Stuck at VCC due to stuck port data_in             ;
-; timer_thing:timer_thing_inst0|time_vec1[6,7]    ; Stuck at GND due to stuck port data_in             ;
-; lcd_thing:lcd_thing_inst0|Datas[27][4]          ; Stuck at VCC due to stuck port data_in             ;
-; lcd_thing:lcd_thing_inst0|Datas[27][5]          ; Stuck at VCC due to stuck port data_in             ;
-; lcd_thing:lcd_thing_inst0|Datas[27][7]          ; Stuck at GND due to stuck port data_in             ;
-; lcd_thing:lcd_thing_inst0|Datas[26][5]          ; Stuck at VCC due to stuck port data_in             ;
-; lcd_thing:lcd_thing_inst0|Datas[26][7]          ; Stuck at GND due to stuck port data_in             ;
-; lcd_thing:lcd_thing_inst0|Datas[25][2]          ; Stuck at GND due to stuck port data_in             ;
-; lcd_thing:lcd_thing_inst0|Datas[25][5]          ; Stuck at VCC due to stuck port data_in             ;
-; lcd_thing:lcd_thing_inst0|Datas[25][7]          ; Stuck at GND due to stuck port data_in             ;
-; lcd_thing:lcd_thing_inst0|Datas[24][5]          ; Stuck at VCC due to stuck port data_in             ;
-; lcd_thing:lcd_thing_inst0|Datas[24][7]          ; Stuck at GND due to stuck port data_in             ;
-; lcd_thing:lcd_thing_inst0|Datas[23][4]          ; Stuck at VCC due to stuck port data_in             ;
-; lcd_thing:lcd_thing_inst0|Datas[23][7]          ; Stuck at GND due to stuck port data_in             ;
-; lcd_thing:lcd_thing_inst0|Datas[16][4]          ; Stuck at VCC due to stuck port data_in             ;
-; lcd_thing:lcd_thing_inst0|Datas[16][5]          ; Stuck at VCC due to stuck port data_in             ;
-; lcd_thing:lcd_thing_inst0|Datas[16][6]          ; Stuck at GND due to stuck port data_in             ;
-; lcd_thing:lcd_thing_inst0|Datas[16][7]          ; Stuck at GND due to stuck port data_in             ;
-; lcd_thing:lcd_thing_inst0|Datas[23][6]          ; Merged with lcd_thing:lcd_thing_inst0|Datas[24][6] ;
-; lcd_thing:lcd_thing_inst0|Datas[24][6]          ; Merged with lcd_thing:lcd_thing_inst0|Datas[25][6] ;
-; lcd_thing:lcd_thing_inst0|Datas[25][6]          ; Merged with lcd_thing:lcd_thing_inst0|Datas[25][0] ;
-; lcd_thing:lcd_thing_inst0|Datas[25][0]          ; Merged with lcd_thing:lcd_thing_inst0|Datas[26][6] ;
-; lcd_thing:lcd_thing_inst0|Datas[26][6]          ; Merged with lcd_thing:lcd_thing_inst0|Datas[27][6] ;
-; lcd_thing:lcd_thing_inst0|Datas[23][5]          ; Merged with lcd_thing:lcd_thing_inst0|Datas[24][4] ;
-; lcd_thing:lcd_thing_inst0|Datas[24][4]          ; Merged with lcd_thing:lcd_thing_inst0|Datas[25][4] ;
-; lcd_thing:lcd_thing_inst0|Datas[25][4]          ; Merged with lcd_thing:lcd_thing_inst0|Datas[25][3] ;
-; lcd_thing:lcd_thing_inst0|Datas[25][3]          ; Merged with lcd_thing:lcd_thing_inst0|Datas[25][1] ;
-; lcd_thing:lcd_thing_inst0|Datas[25][1]          ; Merged with lcd_thing:lcd_thing_inst0|Datas[26][4] ;
-; lcd_thing:lcd_thing_inst0|Datas[16][1]          ; Merged with lcd_thing:lcd_thing_inst0|Datas[27][1] ;
-; lcd_thing:lcd_thing_inst0|Datas[16][2]          ; Merged with lcd_thing:lcd_thing_inst0|Datas[27][2] ;
-; lcd_thing:lcd_thing_inst0|Datas[26][4]          ; Merged with lcd_thing:lcd_thing_inst0|Datas[27][6] ;
-; timer_thing:timer_thing_inst0|start_counting    ; Merged with lcd_thing:lcd_thing_inst0|flag         ;
-; timer_thing:timer_thing_inst0|minutes_tens[2,3] ; Stuck at GND due to stuck port data_in             ;
-; timer_thing:timer_thing_inst0|seconds_tens[3]   ; Stuck at GND due to stuck port data_in             ;
-; timer_thing:timer_thing_inst0|time_vec1[2,3]    ; Stuck at GND due to stuck port data_in             ;
-; timer_thing:timer_thing_inst0|time_vec4[3]      ; Stuck at GND due to stuck port data_in             ;
-; lcd_thing:lcd_thing_inst0|Datas[23][2]          ; Stuck at GND due to stuck port data_in             ;
-; lcd_thing:lcd_thing_inst0|Datas[23][3]          ; Stuck at GND due to stuck port data_in             ;
-; lcd_thing:lcd_thing_inst0|Datas[26][3]          ; Stuck at GND due to stuck port data_in             ;
-; Total Number of Removed Registers = 63          ;                                                    ;
-+-------------------------------------------------+----------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                            ;
++--------------------------------------------------+------------------------------------------------------------+
+; Register name                                    ; Reason for Removal                                         ;
++--------------------------------------------------+------------------------------------------------------------+
+; timer_thing:timer_thing_inst0|time_vec2[4,5]     ; Stuck at VCC due to stuck port data_in                     ;
+; timer_thing:timer_thing_inst0|time_vec3[6,7]     ; Stuck at GND due to stuck port data_in                     ;
+; timer_thing:timer_thing_inst0|time_vec3[3..5]    ; Stuck at VCC due to stuck port data_in                     ;
+; timer_thing:timer_thing_inst0|time_vec3[2]       ; Stuck at GND due to stuck port data_in                     ;
+; timer_thing:timer_thing_inst0|time_vec3[1]       ; Stuck at VCC due to stuck port data_in                     ;
+; timer_thing:timer_thing_inst0|time_vec3[0]       ; Stuck at GND due to stuck port data_in                     ;
+; timer_thing:timer_thing_inst0|time_vec4[6,7]     ; Stuck at GND due to stuck port data_in                     ;
+; timer_thing:timer_thing_inst0|time_vec4[4,5]     ; Stuck at VCC due to stuck port data_in                     ;
+; timer_thing:timer_thing_inst0|time_vec5[6,7]     ; Stuck at GND due to stuck port data_in                     ;
+; timer_thing:timer_thing_inst0|time_vec5[4,5]     ; Stuck at VCC due to stuck port data_in                     ;
+; timer_thing:timer_thing_inst0|time_vec2[6,7]     ; Stuck at GND due to stuck port data_in                     ;
+; timer_thing:timer_thing_inst0|time_vec1[4,5]     ; Stuck at VCC due to stuck port data_in                     ;
+; timer_thing:timer_thing_inst0|time_vec1[6,7]     ; Stuck at GND due to stuck port data_in                     ;
+; timer_thing:timer_thing_inst0|fraction_ones[6,7] ; Stuck at GND due to stuck port data_in                     ;
+; lcd_thing:lcd_thing_inst0|Datas[27][4]           ; Stuck at VCC due to stuck port data_in                     ;
+; lcd_thing:lcd_thing_inst0|Datas[27][5]           ; Stuck at VCC due to stuck port data_in                     ;
+; lcd_thing:lcd_thing_inst0|Datas[27][7]           ; Stuck at GND due to stuck port data_in                     ;
+; lcd_thing:lcd_thing_inst0|Datas[26][5]           ; Stuck at VCC due to stuck port data_in                     ;
+; lcd_thing:lcd_thing_inst0|Datas[26][7]           ; Stuck at GND due to stuck port data_in                     ;
+; lcd_thing:lcd_thing_inst0|Datas[25][2]           ; Stuck at GND due to stuck port data_in                     ;
+; lcd_thing:lcd_thing_inst0|Datas[25][5]           ; Stuck at VCC due to stuck port data_in                     ;
+; lcd_thing:lcd_thing_inst0|Datas[25][7]           ; Stuck at GND due to stuck port data_in                     ;
+; lcd_thing:lcd_thing_inst0|Datas[24][5]           ; Stuck at VCC due to stuck port data_in                     ;
+; lcd_thing:lcd_thing_inst0|Datas[24][7]           ; Stuck at GND due to stuck port data_in                     ;
+; lcd_thing:lcd_thing_inst0|Datas[23][4]           ; Stuck at VCC due to stuck port data_in                     ;
+; lcd_thing:lcd_thing_inst0|Datas[23][7]           ; Stuck at GND due to stuck port data_in                     ;
+; lcd_thing:lcd_thing_inst0|Datas[17][6]           ; Stuck at GND due to stuck port data_in                     ;
+; lcd_thing:lcd_thing_inst0|Datas[17][7]           ; Stuck at GND due to stuck port data_in                     ;
+; lcd_thing:lcd_thing_inst0|Datas[23][6]           ; Merged with lcd_thing:lcd_thing_inst0|Datas[24][6]         ;
+; lcd_thing:lcd_thing_inst0|Datas[24][6]           ; Merged with lcd_thing:lcd_thing_inst0|Datas[25][6]         ;
+; lcd_thing:lcd_thing_inst0|Datas[25][6]           ; Merged with lcd_thing:lcd_thing_inst0|Datas[25][0]         ;
+; lcd_thing:lcd_thing_inst0|Datas[25][0]           ; Merged with lcd_thing:lcd_thing_inst0|Datas[26][6]         ;
+; lcd_thing:lcd_thing_inst0|Datas[26][6]           ; Merged with lcd_thing:lcd_thing_inst0|Datas[27][6]         ;
+; lcd_thing:lcd_thing_inst0|Datas[23][5]           ; Merged with lcd_thing:lcd_thing_inst0|Datas[24][4]         ;
+; lcd_thing:lcd_thing_inst0|Datas[24][4]           ; Merged with lcd_thing:lcd_thing_inst0|Datas[25][4]         ;
+; lcd_thing:lcd_thing_inst0|Datas[25][4]           ; Merged with lcd_thing:lcd_thing_inst0|Datas[25][3]         ;
+; lcd_thing:lcd_thing_inst0|Datas[25][3]           ; Merged with lcd_thing:lcd_thing_inst0|Datas[25][1]         ;
+; lcd_thing:lcd_thing_inst0|Datas[25][1]           ; Merged with lcd_thing:lcd_thing_inst0|Datas[26][4]         ;
+; lcd_thing:lcd_thing_inst0|Datas[26][4]           ; Merged with lcd_thing:lcd_thing_inst0|Datas[27][6]         ;
+; timer_thing:timer_thing_inst0|start_counting     ; Merged with lcd_thing:lcd_thing_inst0|flag                 ;
+; timer_thing:timer_thing_inst0|fraction_ones[5]   ; Merged with timer_thing:timer_thing_inst0|fraction_ones[4] ;
+; timer_thing:timer_thing_inst0|fraction_tens[4,5] ; Merged with timer_thing:timer_thing_inst0|fraction_ones[4] ;
+; lcd_thing:lcd_thing_inst0|Datas[17][4]           ; Merged with lcd_thing:lcd_thing_inst0|Datas[16][5]         ;
+; lcd_thing:lcd_thing_inst0|Datas[17][5]           ; Merged with lcd_thing:lcd_thing_inst0|Datas[16][5]         ;
+; timer_thing:timer_thing_inst0|minutes_tens[2]    ; Stuck at GND due to stuck port data_in                     ;
+; timer_thing:timer_thing_inst0|seconds_tens[3]    ; Stuck at GND due to stuck port data_in                     ;
+; timer_thing:timer_thing_inst0|minutes_tens[3]    ; Stuck at GND due to stuck port data_in                     ;
+; timer_thing:timer_thing_inst0|time_vec1[2]       ; Stuck at GND due to stuck port data_in                     ;
+; timer_thing:timer_thing_inst0|time_vec4[3]       ; Stuck at GND due to stuck port data_in                     ;
+; timer_thing:timer_thing_inst0|time_vec1[3]       ; Stuck at GND due to stuck port data_in                     ;
+; lcd_thing:lcd_thing_inst0|Datas[23][2]           ; Stuck at GND due to stuck port data_in                     ;
+; lcd_thing:lcd_thing_inst0|Datas[26][3]           ; Stuck at GND due to stuck port data_in                     ;
+; lcd_thing:lcd_thing_inst0|Datas[23][3]           ; Stuck at GND due to stuck port data_in                     ;
+; Total Number of Removed Registers = 66           ;                                                            ;
++--------------------------------------------------+------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                                    ;
-+-----------------------------------------------+---------------------------+------------------------------------------------------------------------------------+
-; Register name                                 ; Reason for Removal        ; Registers Removed due to This Register                                             ;
-+-----------------------------------------------+---------------------------+------------------------------------------------------------------------------------+
-; timer_thing:timer_thing_inst0|time_vec5[7]    ; Stuck at GND              ; lcd_thing:lcd_thing_inst0|Datas[27][7], lcd_thing:lcd_thing_inst0|Datas[16][7]     ;
-;                                               ; due to stuck port data_in ;                                                                                    ;
-; timer_thing:timer_thing_inst0|time_vec5[5]    ; Stuck at VCC              ; lcd_thing:lcd_thing_inst0|Datas[27][5], lcd_thing:lcd_thing_inst0|Datas[16][5]     ;
-;                                               ; due to stuck port data_in ;                                                                                    ;
-; timer_thing:timer_thing_inst0|time_vec5[4]    ; Stuck at VCC              ; lcd_thing:lcd_thing_inst0|Datas[27][4], lcd_thing:lcd_thing_inst0|Datas[16][4]     ;
-;                                               ; due to stuck port data_in ;                                                                                    ;
-; timer_thing:timer_thing_inst0|minutes_tens[2] ; Stuck at GND              ; timer_thing:timer_thing_inst0|time_vec1[2], lcd_thing:lcd_thing_inst0|Datas[23][2] ;
-;                                               ; due to stuck port data_in ;                                                                                    ;
-; timer_thing:timer_thing_inst0|minutes_tens[3] ; Stuck at GND              ; timer_thing:timer_thing_inst0|time_vec1[3], lcd_thing:lcd_thing_inst0|Datas[23][3] ;
-;                                               ; due to stuck port data_in ;                                                                                    ;
-; timer_thing:timer_thing_inst0|seconds_tens[3] ; Stuck at GND              ; timer_thing:timer_thing_inst0|time_vec4[3], lcd_thing:lcd_thing_inst0|Datas[26][3] ;
-;                                               ; due to stuck port data_in ;                                                                                    ;
-; timer_thing:timer_thing_inst0|time_vec2[5]    ; Stuck at VCC              ; lcd_thing:lcd_thing_inst0|Datas[24][5]                                             ;
-;                                               ; due to stuck port data_in ;                                                                                    ;
-; timer_thing:timer_thing_inst0|time_vec3[7]    ; Stuck at GND              ; lcd_thing:lcd_thing_inst0|Datas[25][7]                                             ;
-;                                               ; due to stuck port data_in ;                                                                                    ;
-; timer_thing:timer_thing_inst0|time_vec3[5]    ; Stuck at VCC              ; lcd_thing:lcd_thing_inst0|Datas[25][5]                                             ;
-;                                               ; due to stuck port data_in ;                                                                                    ;
-; timer_thing:timer_thing_inst0|time_vec3[2]    ; Stuck at GND              ; lcd_thing:lcd_thing_inst0|Datas[25][2]                                             ;
-;                                               ; due to stuck port data_in ;                                                                                    ;
-; timer_thing:timer_thing_inst0|time_vec4[7]    ; Stuck at GND              ; lcd_thing:lcd_thing_inst0|Datas[26][7]                                             ;
-;                                               ; due to stuck port data_in ;                                                                                    ;
-; timer_thing:timer_thing_inst0|time_vec4[5]    ; Stuck at VCC              ; lcd_thing:lcd_thing_inst0|Datas[26][5]                                             ;
-;                                               ; due to stuck port data_in ;                                                                                    ;
-; timer_thing:timer_thing_inst0|time_vec5[6]    ; Stuck at GND              ; lcd_thing:lcd_thing_inst0|Datas[16][6]                                             ;
-;                                               ; due to stuck port data_in ;                                                                                    ;
-; timer_thing:timer_thing_inst0|time_vec2[7]    ; Stuck at GND              ; lcd_thing:lcd_thing_inst0|Datas[24][7]                                             ;
-;                                               ; due to stuck port data_in ;                                                                                    ;
-; timer_thing:timer_thing_inst0|time_vec1[4]    ; Stuck at VCC              ; lcd_thing:lcd_thing_inst0|Datas[23][4]                                             ;
-;                                               ; due to stuck port data_in ;                                                                                    ;
-; timer_thing:timer_thing_inst0|time_vec1[7]    ; Stuck at GND              ; lcd_thing:lcd_thing_inst0|Datas[23][7]                                             ;
-;                                               ; due to stuck port data_in ;                                                                                    ;
-+-----------------------------------------------+---------------------------+------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                     ;
++------------------------------------------------+---------------------------+------------------------------------------------------------------------------------+
+; Register name                                  ; Reason for Removal        ; Registers Removed due to This Register                                             ;
++------------------------------------------------+---------------------------+------------------------------------------------------------------------------------+
+; timer_thing:timer_thing_inst0|minutes_tens[2]  ; Stuck at GND              ; timer_thing:timer_thing_inst0|time_vec1[2], lcd_thing:lcd_thing_inst0|Datas[23][2] ;
+;                                                ; due to stuck port data_in ;                                                                                    ;
+; timer_thing:timer_thing_inst0|seconds_tens[3]  ; Stuck at GND              ; timer_thing:timer_thing_inst0|time_vec4[3], lcd_thing:lcd_thing_inst0|Datas[26][3] ;
+;                                                ; due to stuck port data_in ;                                                                                    ;
+; timer_thing:timer_thing_inst0|minutes_tens[3]  ; Stuck at GND              ; timer_thing:timer_thing_inst0|time_vec1[3], lcd_thing:lcd_thing_inst0|Datas[23][3] ;
+;                                                ; due to stuck port data_in ;                                                                                    ;
+; timer_thing:timer_thing_inst0|time_vec2[5]     ; Stuck at VCC              ; lcd_thing:lcd_thing_inst0|Datas[24][5]                                             ;
+;                                                ; due to stuck port data_in ;                                                                                    ;
+; timer_thing:timer_thing_inst0|time_vec3[7]     ; Stuck at GND              ; lcd_thing:lcd_thing_inst0|Datas[25][7]                                             ;
+;                                                ; due to stuck port data_in ;                                                                                    ;
+; timer_thing:timer_thing_inst0|time_vec3[5]     ; Stuck at VCC              ; lcd_thing:lcd_thing_inst0|Datas[25][5]                                             ;
+;                                                ; due to stuck port data_in ;                                                                                    ;
+; timer_thing:timer_thing_inst0|time_vec3[2]     ; Stuck at GND              ; lcd_thing:lcd_thing_inst0|Datas[25][2]                                             ;
+;                                                ; due to stuck port data_in ;                                                                                    ;
+; timer_thing:timer_thing_inst0|time_vec4[7]     ; Stuck at GND              ; lcd_thing:lcd_thing_inst0|Datas[26][7]                                             ;
+;                                                ; due to stuck port data_in ;                                                                                    ;
+; timer_thing:timer_thing_inst0|time_vec4[5]     ; Stuck at VCC              ; lcd_thing:lcd_thing_inst0|Datas[26][5]                                             ;
+;                                                ; due to stuck port data_in ;                                                                                    ;
+; timer_thing:timer_thing_inst0|time_vec5[7]     ; Stuck at GND              ; lcd_thing:lcd_thing_inst0|Datas[27][7]                                             ;
+;                                                ; due to stuck port data_in ;                                                                                    ;
+; timer_thing:timer_thing_inst0|time_vec5[5]     ; Stuck at VCC              ; lcd_thing:lcd_thing_inst0|Datas[27][5]                                             ;
+;                                                ; due to stuck port data_in ;                                                                                    ;
+; timer_thing:timer_thing_inst0|time_vec5[4]     ; Stuck at VCC              ; lcd_thing:lcd_thing_inst0|Datas[27][4]                                             ;
+;                                                ; due to stuck port data_in ;                                                                                    ;
+; timer_thing:timer_thing_inst0|time_vec2[7]     ; Stuck at GND              ; lcd_thing:lcd_thing_inst0|Datas[24][7]                                             ;
+;                                                ; due to stuck port data_in ;                                                                                    ;
+; timer_thing:timer_thing_inst0|time_vec1[4]     ; Stuck at VCC              ; lcd_thing:lcd_thing_inst0|Datas[23][4]                                             ;
+;                                                ; due to stuck port data_in ;                                                                                    ;
+; timer_thing:timer_thing_inst0|time_vec1[7]     ; Stuck at GND              ; lcd_thing:lcd_thing_inst0|Datas[23][7]                                             ;
+;                                                ; due to stuck port data_in ;                                                                                    ;
+; timer_thing:timer_thing_inst0|fraction_ones[6] ; Stuck at GND              ; lcd_thing:lcd_thing_inst0|Datas[17][6]                                             ;
+;                                                ; due to stuck port data_in ;                                                                                    ;
+; timer_thing:timer_thing_inst0|fraction_ones[7] ; Stuck at GND              ; lcd_thing:lcd_thing_inst0|Datas[17][7]                                             ;
+;                                                ; due to stuck port data_in ;                                                                                    ;
++------------------------------------------------+---------------------------+------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -374,12 +398,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 188   ;
+; Total registers                              ; 209   ;
 ; Number of registers using Synchronous Clear  ; 32    ;
 ; Number of registers using Synchronous Load   ; 1     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 47    ;
+; Number of registers using Clock Enable       ; 57    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -389,7 +413,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------+---------+
 ; Inverted Register                      ; Fan out ;
 +----------------------------------------+---------+
-; lcd_thing:lcd_thing_inst0|j[0]         ; 21      ;
+; lcd_thing:lcd_thing_inst0|j[0]         ; 22      ;
 ; lcd_thing:lcd_thing_inst0|Datas[27][6] ; 6       ;
 ; lcd_thing:lcd_thing_inst0|Datas[24][0] ; 1       ;
 ; lcd_thing:lcd_thing_inst0|Datas[27][0] ; 1       ;
@@ -397,7 +421,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; lcd_thing:lcd_thing_inst0|Datas[24][2] ; 1       ;
 ; lcd_thing:lcd_thing_inst0|Datas[26][2] ; 1       ;
 ; lcd_thing:lcd_thing_inst0|Datas[27][3] ; 1       ;
-; Total number of inverted registers = 8 ;         ;
+; lcd_thing:lcd_thing_inst0|Datas[16][5] ; 2       ;
+; Total number of inverted registers = 9 ;         ;
 +----------------------------------------+---------+
 
 
@@ -407,7 +432,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output              ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
 ; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |DE0_TOP|lcd_thing:lcd_thing_inst0|i[6] ;
-; 6:1                ; 31 bits   ; 124 LEs       ; 31 LEs               ; 93 LEs                 ; Yes        ; |DE0_TOP|lcd_thing:lcd_thing_inst0|j[7] ;
+; 6:1                ; 31 bits   ; 124 LEs       ; 31 LEs               ; 93 LEs                 ; Yes        ; |DE0_TOP|lcd_thing:lcd_thing_inst0|j[6] ;
 ; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; No         ; |DE0_TOP|lcd_thing:lcd_thing_inst0|j    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
 
@@ -464,6 +489,98 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; preset_val     ; 0        ; Signed Integer                                 ;
 ; counter_max    ; 50000000 ; Signed Integer                                 ;
 +----------------+----------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: timer_thing:timer_thing_inst0|lpm_divide:Div3 ;
++------------------------+----------------+------------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                 ;
++------------------------+----------------+------------------------------------------------------+
+; LPM_WIDTHN             ; 32             ; Untyped                                              ;
+; LPM_WIDTHD             ; 4              ; Untyped                                              ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                              ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                              ;
+; LPM_PIPELINE           ; 0              ; Untyped                                              ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                              ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                              ;
+; CBXI_PARAMETER         ; lpm_divide_nhm ; Untyped                                              ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                              ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                              ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                           ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                         ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                         ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                       ;
++------------------------+----------------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: timer_thing:timer_thing_inst0|lpm_divide:Div4 ;
++------------------------+----------------+------------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                 ;
++------------------------+----------------+------------------------------------------------------+
+; LPM_WIDTHN             ; 32             ; Untyped                                              ;
+; LPM_WIDTHD             ; 4              ; Untyped                                              ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                              ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                              ;
+; LPM_PIPELINE           ; 0              ; Untyped                                              ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                              ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                              ;
+; CBXI_PARAMETER         ; lpm_divide_nhm ; Untyped                                              ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                              ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                              ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                           ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                         ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                         ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                       ;
++------------------------+----------------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: timer_thing:timer_thing_inst0|lpm_divide:Mod3 ;
++------------------------+----------------+------------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                 ;
++------------------------+----------------+------------------------------------------------------+
+; LPM_WIDTHN             ; 32             ; Untyped                                              ;
+; LPM_WIDTHD             ; 4              ; Untyped                                              ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                              ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                              ;
+; LPM_PIPELINE           ; 0              ; Untyped                                              ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                              ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                              ;
+; CBXI_PARAMETER         ; lpm_divide_q9m ; Untyped                                              ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                              ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                              ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                           ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                         ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                         ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                       ;
++------------------------+----------------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: timer_thing:timer_thing_inst0|lpm_divide:Div1 ;
++------------------------+----------------+------------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                 ;
++------------------------+----------------+------------------------------------------------------+
+; LPM_WIDTHN             ; 5              ; Untyped                                              ;
+; LPM_WIDTHD             ; 4              ; Untyped                                              ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                              ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                              ;
+; LPM_PIPELINE           ; 0              ; Untyped                                              ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                              ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                              ;
+; CBXI_PARAMETER         ; lpm_divide_7gm ; Untyped                                              ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                              ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                              ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                           ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                         ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                         ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                       ;
++------------------------+----------------+------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -537,18 +654,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: timer_thing:timer_thing_inst0|lpm_divide:Div1 ;
+; Parameter Settings for Inferred Entity Instance: timer_thing:timer_thing_inst0|lpm_divide:Div0 ;
 +------------------------+----------------+------------------------------------------------------+
 ; Parameter Name         ; Value          ; Type                                                 ;
 +------------------------+----------------+------------------------------------------------------+
-; LPM_WIDTHN             ; 5              ; Untyped                                              ;
-; LPM_WIDTHD             ; 4              ; Untyped                                              ;
+; LPM_WIDTHN             ; 32             ; Untyped                                              ;
+; LPM_WIDTHD             ; 6              ; Untyped                                              ;
 ; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                              ;
 ; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                              ;
 ; LPM_PIPELINE           ; 0              ; Untyped                                              ;
 ; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                              ;
 ; MAXIMIZE_SPEED         ; 5              ; Untyped                                              ;
-; CBXI_PARAMETER         ; lpm_divide_7gm ; Untyped                                              ;
+; CBXI_PARAMETER         ; lpm_divide_phm ; Untyped                                              ;
 ; CARRY_CHAIN            ; MANUAL         ; Untyped                                              ;
 ; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                              ;
 ; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                           ;
@@ -572,29 +689,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                              ;
 ; MAXIMIZE_SPEED         ; 5              ; Untyped                                              ;
 ; CBXI_PARAMETER         ; lpm_divide_s9m ; Untyped                                              ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                              ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                              ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                           ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                         ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                         ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                       ;
-+------------------------+----------------+------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: timer_thing:timer_thing_inst0|lpm_divide:Div0 ;
-+------------------------+----------------+------------------------------------------------------+
-; Parameter Name         ; Value          ; Type                                                 ;
-+------------------------+----------------+------------------------------------------------------+
-; LPM_WIDTHN             ; 32             ; Untyped                                              ;
-; LPM_WIDTHD             ; 6              ; Untyped                                              ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                              ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                              ;
-; LPM_PIPELINE           ; 0              ; Untyped                                              ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                              ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                              ;
-; CBXI_PARAMETER         ; lpm_divide_phm ; Untyped                                              ;
 ; CARRY_CHAIN            ; MANUAL         ; Untyped                                              ;
 ; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                              ;
 ; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                           ;
@@ -640,7 +734,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -650,7 +744,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Wed Apr 03 23:40:56 2019
+    Info: Processing started: Thu Apr 04 00:11:25 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE0_TOP -c DE0_TOP
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file lcd_thing.v
@@ -659,30 +753,36 @@ Info (12021): Found 1 design units, including 1 entities, in source file timer_t
     Info (12023): Found entity 1: timer_thing
 Info (12021): Found 1 design units, including 1 entities, in source file button_test.v
     Info (12023): Found entity 1: button_test
-Warning (10227): Verilog HDL Port Declaration warning at lcd_thing.v(46): data type declaration for "fraction" declares packed dimensions but the port declaration declaration does not
-Info (10499): HDL info at lcd_thing.v(26): see declaration for object "fraction"
-Warning (10227): Verilog HDL Port Declaration warning at lcd_thing.v(48): data type declaration for "time_vec1" declares packed dimensions but the port declaration declaration does not
-Info (10499): HDL info at lcd_thing.v(28): see declaration for object "time_vec1"
-Warning (10227): Verilog HDL Port Declaration warning at lcd_thing.v(49): data type declaration for "time_vec2" declares packed dimensions but the port declaration declaration does not
-Info (10499): HDL info at lcd_thing.v(29): see declaration for object "time_vec2"
-Warning (10227): Verilog HDL Port Declaration warning at lcd_thing.v(50): data type declaration for "time_vec3" declares packed dimensions but the port declaration declaration does not
-Info (10499): HDL info at lcd_thing.v(30): see declaration for object "time_vec3"
-Warning (10227): Verilog HDL Port Declaration warning at lcd_thing.v(51): data type declaration for "time_vec4" declares packed dimensions but the port declaration declaration does not
-Info (10499): HDL info at lcd_thing.v(31): see declaration for object "time_vec4"
-Warning (10227): Verilog HDL Port Declaration warning at lcd_thing.v(52): data type declaration for "time_vec5" declares packed dimensions but the port declaration declaration does not
-Info (10499): HDL info at lcd_thing.v(32): see declaration for object "time_vec5"
-Warning (10227): Verilog HDL Port Declaration warning at lcd_thing.v(57): data type declaration for "data_out" declares packed dimensions but the port declaration declaration does not
-Info (10499): HDL info at lcd_thing.v(37): see declaration for object "data_out"
-Warning (10227): Verilog HDL Port Declaration warning at timer_thing.v(33): data type declaration for "time_vec1" declares packed dimensions but the port declaration declaration does not
-Info (10499): HDL info at timer_thing.v(21): see declaration for object "time_vec1"
-Warning (10227): Verilog HDL Port Declaration warning at timer_thing.v(34): data type declaration for "time_vec2" declares packed dimensions but the port declaration declaration does not
-Info (10499): HDL info at timer_thing.v(22): see declaration for object "time_vec2"
-Warning (10227): Verilog HDL Port Declaration warning at timer_thing.v(35): data type declaration for "time_vec3" declares packed dimensions but the port declaration declaration does not
-Info (10499): HDL info at timer_thing.v(23): see declaration for object "time_vec3"
-Warning (10227): Verilog HDL Port Declaration warning at timer_thing.v(36): data type declaration for "time_vec4" declares packed dimensions but the port declaration declaration does not
-Info (10499): HDL info at timer_thing.v(24): see declaration for object "time_vec4"
-Warning (10227): Verilog HDL Port Declaration warning at timer_thing.v(37): data type declaration for "time_vec5" declares packed dimensions but the port declaration declaration does not
-Info (10499): HDL info at timer_thing.v(25): see declaration for object "time_vec5"
+Warning (10227): Verilog HDL Port Declaration warning at lcd_thing.v(48): data type declaration for "fraction_tens" declares packed dimensions but the port declaration declaration does not
+Info (10499): HDL info at lcd_thing.v(27): see declaration for object "fraction_tens"
+Warning (10227): Verilog HDL Port Declaration warning at lcd_thing.v(49): data type declaration for "fraction_ones" declares packed dimensions but the port declaration declaration does not
+Info (10499): HDL info at lcd_thing.v(28): see declaration for object "fraction_ones"
+Warning (10227): Verilog HDL Port Declaration warning at lcd_thing.v(51): data type declaration for "time_vec1" declares packed dimensions but the port declaration declaration does not
+Info (10499): HDL info at lcd_thing.v(30): see declaration for object "time_vec1"
+Warning (10227): Verilog HDL Port Declaration warning at lcd_thing.v(52): data type declaration for "time_vec2" declares packed dimensions but the port declaration declaration does not
+Info (10499): HDL info at lcd_thing.v(31): see declaration for object "time_vec2"
+Warning (10227): Verilog HDL Port Declaration warning at lcd_thing.v(53): data type declaration for "time_vec3" declares packed dimensions but the port declaration declaration does not
+Info (10499): HDL info at lcd_thing.v(32): see declaration for object "time_vec3"
+Warning (10227): Verilog HDL Port Declaration warning at lcd_thing.v(54): data type declaration for "time_vec4" declares packed dimensions but the port declaration declaration does not
+Info (10499): HDL info at lcd_thing.v(33): see declaration for object "time_vec4"
+Warning (10227): Verilog HDL Port Declaration warning at lcd_thing.v(55): data type declaration for "time_vec5" declares packed dimensions but the port declaration declaration does not
+Info (10499): HDL info at lcd_thing.v(34): see declaration for object "time_vec5"
+Warning (10227): Verilog HDL Port Declaration warning at lcd_thing.v(60): data type declaration for "data_out" declares packed dimensions but the port declaration declaration does not
+Info (10499): HDL info at lcd_thing.v(39): see declaration for object "data_out"
+Warning (10227): Verilog HDL Port Declaration warning at timer_thing.v(37): data type declaration for "time_vec1" declares packed dimensions but the port declaration declaration does not
+Info (10499): HDL info at timer_thing.v(23): see declaration for object "time_vec1"
+Warning (10227): Verilog HDL Port Declaration warning at timer_thing.v(38): data type declaration for "time_vec2" declares packed dimensions but the port declaration declaration does not
+Info (10499): HDL info at timer_thing.v(24): see declaration for object "time_vec2"
+Warning (10227): Verilog HDL Port Declaration warning at timer_thing.v(39): data type declaration for "time_vec3" declares packed dimensions but the port declaration declaration does not
+Info (10499): HDL info at timer_thing.v(25): see declaration for object "time_vec3"
+Warning (10227): Verilog HDL Port Declaration warning at timer_thing.v(40): data type declaration for "time_vec4" declares packed dimensions but the port declaration declaration does not
+Info (10499): HDL info at timer_thing.v(26): see declaration for object "time_vec4"
+Warning (10227): Verilog HDL Port Declaration warning at timer_thing.v(41): data type declaration for "time_vec5" declares packed dimensions but the port declaration declaration does not
+Info (10499): HDL info at timer_thing.v(27): see declaration for object "time_vec5"
+Warning (10227): Verilog HDL Port Declaration warning at timer_thing.v(56): data type declaration for "fraction_tens" declares packed dimensions but the port declaration declaration does not
+Info (10499): HDL info at timer_thing.v(28): see declaration for object "fraction_tens"
+Warning (10227): Verilog HDL Port Declaration warning at timer_thing.v(57): data type declaration for "fraction_ones" declares packed dimensions but the port declaration declaration does not
+Info (10499): HDL info at timer_thing.v(29): see declaration for object "fraction_ones"
 Warning (12125): Using design file de0_top.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: DE0_TOP
 Info (12127): Elaborating entity "DE0_TOP" for the top level hierarchy
@@ -731,23 +831,70 @@ Warning (10230): Verilog HDL assignment warning at button_debouncer.v(79): trunc
 Warning (10230): Verilog HDL assignment warning at button_debouncer.v(88): truncated value with size 32 to match size of target (21)
 Warning (10230): Verilog HDL assignment warning at button_debouncer.v(90): truncated value with size 32 to match size of target (21)
 Info (12128): Elaborating entity "lcd_thing" for hierarchy "lcd_thing:lcd_thing_inst0"
-Warning (10036): Verilog HDL or VHDL warning at lcd_thing.v(63): object "m" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at lcd_thing.v(64): object "n" assigned a value but never read
-Warning (10034): Output port "data_out_rw" at lcd_thing.v(36) has no driver
+Warning (10036): Verilog HDL or VHDL warning at lcd_thing.v(66): object "m" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at lcd_thing.v(67): object "n" assigned a value but never read
+Warning (10034): Output port "data_out_rw" at lcd_thing.v(38) has no driver
 Info (12128): Elaborating entity "timer_thing" for hierarchy "timer_thing:timer_thing_inst0"
-Warning (10230): Verilog HDL assignment warning at timer_thing.v(69): truncated value with size 32 to match size of target (5)
-Warning (10230): Verilog HDL assignment warning at timer_thing.v(70): truncated value with size 32 to match size of target (6)
-Warning (10230): Verilog HDL assignment warning at timer_thing.v(73): truncated value with size 32 to match size of target (4)
-Warning (10230): Verilog HDL assignment warning at timer_thing.v(74): truncated value with size 32 to match size of target (4)
-Warning (10230): Verilog HDL assignment warning at timer_thing.v(75): truncated value with size 32 to match size of target (4)
-Warning (10230): Verilog HDL assignment warning at timer_thing.v(76): truncated value with size 32 to match size of target (4)
-Info (278001): Inferred 6 megafunctions from design logic
+Warning (10230): Verilog HDL assignment warning at timer_thing.v(77): truncated value with size 32 to match size of target (5)
+Warning (10230): Verilog HDL assignment warning at timer_thing.v(78): truncated value with size 32 to match size of target (6)
+Warning (10230): Verilog HDL assignment warning at timer_thing.v(81): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at timer_thing.v(82): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at timer_thing.v(83): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at timer_thing.v(84): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at timer_thing.v(85): truncated value with size 32 to match size of target (8)
+Warning (10230): Verilog HDL assignment warning at timer_thing.v(86): truncated value with size 32 to match size of target (8)
+Info (278001): Inferred 9 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "timer_thing:timer_thing_inst0|Div3"
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "timer_thing:timer_thing_inst0|Div4"
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "timer_thing:timer_thing_inst0|Mod3"
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "timer_thing:timer_thing_inst0|Div1"
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "timer_thing:timer_thing_inst0|Div2"
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "timer_thing:timer_thing_inst0|Mod1"
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "timer_thing:timer_thing_inst0|Mod2"
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "timer_thing:timer_thing_inst0|Div1"
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "timer_thing:timer_thing_inst0|Mod0"
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "timer_thing:timer_thing_inst0|Div0"
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "timer_thing:timer_thing_inst0|Mod0"
+Info (12130): Elaborated megafunction instantiation "timer_thing:timer_thing_inst0|lpm_divide:Div3"
+Info (12133): Instantiated megafunction "timer_thing:timer_thing_inst0|lpm_divide:Div3" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHN" = "32"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_nhm.tdf
+    Info (12023): Found entity 1: lpm_divide_nhm
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_olh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_olh
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_r5f.tdf
+    Info (12023): Found entity 1: alt_u_div_r5f
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_unc.tdf
+    Info (12023): Found entity 1: add_sub_unc
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_vnc.tdf
+    Info (12023): Found entity 1: add_sub_vnc
+Info (12130): Elaborated megafunction instantiation "timer_thing:timer_thing_inst0|lpm_divide:Div4"
+Info (12133): Instantiated megafunction "timer_thing:timer_thing_inst0|lpm_divide:Div4" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHN" = "32"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12130): Elaborated megafunction instantiation "timer_thing:timer_thing_inst0|lpm_divide:Mod3"
+Info (12133): Instantiated megafunction "timer_thing:timer_thing_inst0|lpm_divide:Mod3" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHN" = "32"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_q9m.tdf
+    Info (12023): Found entity 1: lpm_divide_q9m
+Info (12130): Elaborated megafunction instantiation "timer_thing:timer_thing_inst0|lpm_divide:Div1"
+Info (12133): Instantiated megafunction "timer_thing:timer_thing_inst0|lpm_divide:Div1" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHN" = "5"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_7gm.tdf
+    Info (12023): Found entity 1: lpm_divide_7gm
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_8kh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_8kh
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_r2f.tdf
+    Info (12023): Found entity 1: alt_u_div_r2f
 Info (12130): Elaborated megafunction instantiation "timer_thing:timer_thing_inst0|lpm_divide:Div2"
 Info (12133): Instantiated megafunction "timer_thing:timer_thing_inst0|lpm_divide:Div2" with the following parameter:
     Info (12134): Parameter "LPM_WIDTHN" = "6"
@@ -760,10 +907,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/sign
     Info (12023): Found entity 1: sign_div_unsign_9kh
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_t2f.tdf
     Info (12023): Found entity 1: alt_u_div_t2f
-Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_unc.tdf
-    Info (12023): Found entity 1: add_sub_unc
-Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_vnc.tdf
-    Info (12023): Found entity 1: add_sub_vnc
 Info (12130): Elaborated megafunction instantiation "timer_thing:timer_thing_inst0|lpm_divide:Mod1"
 Info (12133): Instantiated megafunction "timer_thing:timer_thing_inst0|lpm_divide:Mod1" with the following parameter:
     Info (12134): Parameter "LPM_WIDTHN" = "5"
@@ -772,10 +915,6 @@ Info (12133): Instantiated megafunction "timer_thing:timer_thing_inst0|lpm_divid
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_a8m.tdf
     Info (12023): Found entity 1: lpm_divide_a8m
-Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_8kh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_8kh
-Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_r2f.tdf
-    Info (12023): Found entity 1: alt_u_div_r2f
 Info (12130): Elaborated megafunction instantiation "timer_thing:timer_thing_inst0|lpm_divide:Mod2"
 Info (12133): Instantiated megafunction "timer_thing:timer_thing_inst0|lpm_divide:Mod2" with the following parameter:
     Info (12134): Parameter "LPM_WIDTHN" = "6"
@@ -784,26 +923,6 @@ Info (12133): Instantiated megafunction "timer_thing:timer_thing_inst0|lpm_divid
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_b8m.tdf
     Info (12023): Found entity 1: lpm_divide_b8m
-Info (12130): Elaborated megafunction instantiation "timer_thing:timer_thing_inst0|lpm_divide:Div1"
-Info (12133): Instantiated megafunction "timer_thing:timer_thing_inst0|lpm_divide:Div1" with the following parameter:
-    Info (12134): Parameter "LPM_WIDTHN" = "5"
-    Info (12134): Parameter "LPM_WIDTHD" = "4"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_7gm.tdf
-    Info (12023): Found entity 1: lpm_divide_7gm
-Info (12130): Elaborated megafunction instantiation "timer_thing:timer_thing_inst0|lpm_divide:Mod0"
-Info (12133): Instantiated megafunction "timer_thing:timer_thing_inst0|lpm_divide:Mod0" with the following parameter:
-    Info (12134): Parameter "LPM_WIDTHN" = "32"
-    Info (12134): Parameter "LPM_WIDTHD" = "6"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_s9m.tdf
-    Info (12023): Found entity 1: lpm_divide_s9m
-Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_qlh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_qlh
-Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_v5f.tdf
-    Info (12023): Found entity 1: alt_u_div_v5f
 Info (12130): Elaborated megafunction instantiation "timer_thing:timer_thing_inst0|lpm_divide:Div0"
 Info (12133): Instantiated megafunction "timer_thing:timer_thing_inst0|lpm_divide:Div0" with the following parameter:
     Info (12134): Parameter "LPM_WIDTHN" = "32"
@@ -812,6 +931,18 @@ Info (12133): Instantiated megafunction "timer_thing:timer_thing_inst0|lpm_divid
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_phm.tdf
     Info (12023): Found entity 1: lpm_divide_phm
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_qlh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_qlh
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_v5f.tdf
+    Info (12023): Found entity 1: alt_u_div_v5f
+Info (12130): Elaborated megafunction instantiation "timer_thing:timer_thing_inst0|lpm_divide:Mod0"
+Info (12133): Instantiated megafunction "timer_thing:timer_thing_inst0|lpm_divide:Mod0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHN" = "32"
+    Info (12134): Parameter "LPM_WIDTHD" = "6"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_s9m.tdf
+    Info (12023): Found entity 1: lpm_divide_s9m
 Warning (13034): The following nodes have both tri-state and non-tri-state drivers
     Warning (13035): Inserted always-enabled tri-state buffer between "LCD_DATA[0]" and its non-tri-state driver.
     Warning (13035): Inserted always-enabled tri-state buffer between "LCD_DATA[1]" and its non-tri-state driver.
@@ -1061,6 +1192,54 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "GPIO1_CLKOUT[0]" is stuck at GND
     Warning (13410): Pin "GPIO1_CLKOUT[1]" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
+Info (17016): Found the following redundant logic cells in design
+    Info (17048): Logic cell "timer_thing:timer_thing_inst0|lpm_divide:Div4|lpm_divide_nhm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider|add_sub_6_result_int[0]~10"
+    Info (17048): Logic cell "timer_thing:timer_thing_inst0|lpm_divide:Div4|lpm_divide_nhm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider|add_sub_7_result_int[0]~10"
+    Info (17048): Logic cell "timer_thing:timer_thing_inst0|lpm_divide:Div4|lpm_divide_nhm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider|add_sub_8_result_int[0]~10"
+    Info (17048): Logic cell "timer_thing:timer_thing_inst0|lpm_divide:Div4|lpm_divide_nhm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider|add_sub_9_result_int[0]~10"
+    Info (17048): Logic cell "timer_thing:timer_thing_inst0|lpm_divide:Div4|lpm_divide_nhm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider|add_sub_10_result_int[0]~10"
+    Info (17048): Logic cell "timer_thing:timer_thing_inst0|lpm_divide:Div4|lpm_divide_nhm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider|add_sub_11_result_int[0]~10"
+    Info (17048): Logic cell "timer_thing:timer_thing_inst0|lpm_divide:Div4|lpm_divide_nhm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider|add_sub_12_result_int[0]~10"
+    Info (17048): Logic cell "timer_thing:timer_thing_inst0|lpm_divide:Div4|lpm_divide_nhm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider|add_sub_13_result_int[0]~10"
+    Info (17048): Logic cell "timer_thing:timer_thing_inst0|lpm_divide:Div4|lpm_divide_nhm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider|add_sub_14_result_int[0]~10"
+    Info (17048): Logic cell "timer_thing:timer_thing_inst0|lpm_divide:Div4|lpm_divide_nhm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider|add_sub_15_result_int[0]~10"
+    Info (17048): Logic cell "timer_thing:timer_thing_inst0|lpm_divide:Div4|lpm_divide_nhm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider|add_sub_16_result_int[0]~10"
+    Info (17048): Logic cell "timer_thing:timer_thing_inst0|lpm_divide:Div4|lpm_divide_nhm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider|add_sub_17_result_int[0]~10"
+    Info (17048): Logic cell "timer_thing:timer_thing_inst0|lpm_divide:Div4|lpm_divide_nhm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider|add_sub_18_result_int[0]~10"
+    Info (17048): Logic cell "timer_thing:timer_thing_inst0|lpm_divide:Div4|lpm_divide_nhm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider|add_sub_19_result_int[0]~10"
+    Info (17048): Logic cell "timer_thing:timer_thing_inst0|lpm_divide:Div4|lpm_divide_nhm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider|add_sub_20_result_int[0]~10"
+    Info (17048): Logic cell "timer_thing:timer_thing_inst0|lpm_divide:Div4|lpm_divide_nhm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider|add_sub_21_result_int[0]~10"
+    Info (17048): Logic cell "timer_thing:timer_thing_inst0|lpm_divide:Div4|lpm_divide_nhm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider|add_sub_22_result_int[0]~10"
+    Info (17048): Logic cell "timer_thing:timer_thing_inst0|lpm_divide:Div4|lpm_divide_nhm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider|add_sub_23_result_int[0]~10"
+    Info (17048): Logic cell "timer_thing:timer_thing_inst0|lpm_divide:Div4|lpm_divide_nhm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider|add_sub_24_result_int[0]~10"
+    Info (17048): Logic cell "timer_thing:timer_thing_inst0|lpm_divide:Div4|lpm_divide_nhm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider|add_sub_25_result_int[0]~10"
+    Info (17048): Logic cell "timer_thing:timer_thing_inst0|lpm_divide:Div4|lpm_divide_nhm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider|add_sub_26_result_int[0]~10"
+    Info (17048): Logic cell "timer_thing:timer_thing_inst0|lpm_divide:Div4|lpm_divide_nhm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider|add_sub_27_result_int[0]~10"
+    Info (17048): Logic cell "timer_thing:timer_thing_inst0|lpm_divide:Div4|lpm_divide_nhm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider|add_sub_28_result_int[0]~10"
+    Info (17048): Logic cell "timer_thing:timer_thing_inst0|lpm_divide:Div4|lpm_divide_nhm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider|add_sub_29_result_int[0]~10"
+    Info (17048): Logic cell "timer_thing:timer_thing_inst0|lpm_divide:Div4|lpm_divide_nhm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider|add_sub_30_result_int[0]~10"
+    Info (17048): Logic cell "timer_thing:timer_thing_inst0|lpm_divide:Mod3|lpm_divide_q9m:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider|add_sub_31_result_int[0]~0"
+    Info (17048): Logic cell "timer_thing:timer_thing_inst0|lpm_divide:Mod3|lpm_divide_q9m:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider|add_sub_6_result_int[0]~10"
+    Info (17048): Logic cell "timer_thing:timer_thing_inst0|lpm_divide:Mod3|lpm_divide_q9m:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider|add_sub_7_result_int[0]~10"
+    Info (17048): Logic cell "timer_thing:timer_thing_inst0|lpm_divide:Mod3|lpm_divide_q9m:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider|add_sub_8_result_int[0]~10"
+    Info (17048): Logic cell "timer_thing:timer_thing_inst0|lpm_divide:Mod3|lpm_divide_q9m:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider|add_sub_9_result_int[0]~10"
+    Info (17048): Logic cell "timer_thing:timer_thing_inst0|lpm_divide:Mod3|lpm_divide_q9m:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider|add_sub_11_result_int[0]~10"
+    Info (17048): Logic cell "timer_thing:timer_thing_inst0|lpm_divide:Mod3|lpm_divide_q9m:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider|add_sub_12_result_int[0]~10"
+    Info (17048): Logic cell "timer_thing:timer_thing_inst0|lpm_divide:Mod3|lpm_divide_q9m:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider|add_sub_13_result_int[0]~10"
+    Info (17048): Logic cell "timer_thing:timer_thing_inst0|lpm_divide:Mod3|lpm_divide_q9m:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider|add_sub_14_result_int[0]~10"
+    Info (17048): Logic cell "timer_thing:timer_thing_inst0|lpm_divide:Mod3|lpm_divide_q9m:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider|add_sub_15_result_int[0]~10"
+    Info (17048): Logic cell "timer_thing:timer_thing_inst0|lpm_divide:Mod3|lpm_divide_q9m:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider|add_sub_16_result_int[0]~10"
+    Info (17048): Logic cell "timer_thing:timer_thing_inst0|lpm_divide:Mod3|lpm_divide_q9m:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider|add_sub_17_result_int[0]~10"
+    Info (17048): Logic cell "timer_thing:timer_thing_inst0|lpm_divide:Mod3|lpm_divide_q9m:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider|add_sub_18_result_int[0]~10"
+    Info (17048): Logic cell "timer_thing:timer_thing_inst0|lpm_divide:Mod3|lpm_divide_q9m:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider|add_sub_19_result_int[0]~10"
+    Info (17048): Logic cell "timer_thing:timer_thing_inst0|lpm_divide:Mod3|lpm_divide_q9m:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider|add_sub_20_result_int[0]~10"
+    Info (17048): Logic cell "timer_thing:timer_thing_inst0|lpm_divide:Mod3|lpm_divide_q9m:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider|add_sub_21_result_int[0]~10"
+    Info (17048): Logic cell "timer_thing:timer_thing_inst0|lpm_divide:Mod3|lpm_divide_q9m:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider|add_sub_23_result_int[0]~10"
+    Info (17048): Logic cell "timer_thing:timer_thing_inst0|lpm_divide:Mod3|lpm_divide_q9m:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider|add_sub_25_result_int[0]~10"
+    Info (17048): Logic cell "timer_thing:timer_thing_inst0|lpm_divide:Mod3|lpm_divide_q9m:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider|add_sub_26_result_int[0]~10"
+    Info (17048): Logic cell "timer_thing:timer_thing_inst0|lpm_divide:Mod3|lpm_divide_q9m:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider|add_sub_28_result_int[0]~10"
+    Info (17048): Logic cell "timer_thing:timer_thing_inst0|lpm_divide:Mod3|lpm_divide_q9m:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider|add_sub_29_result_int[0]~10"
+    Info (17048): Logic cell "timer_thing:timer_thing_inst0|lpm_divide:Mod3|lpm_divide_q9m:auto_generated|sign_div_unsign_olh:divider|alt_u_div_r5f:divider|add_sub_30_result_int[0]~10"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 21 input pin(s) that do not drive logic
@@ -1085,15 +1264,15 @@ Warning (21074): Design contains 21 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "GPIO0_CLKIN[1]"
     Warning (15610): No output dependent on input pin "GPIO1_CLKIN[0]"
     Warning (15610): No output dependent on input pin "GPIO1_CLKIN[1]"
-Info (21057): Implemented 1594 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2699 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 23 input pins
     Info (21059): Implemented 118 output pins
     Info (21060): Implemented 111 bidirectional pins
-    Info (21061): Implemented 1342 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 326 warnings
-    Info: Peak virtual memory: 4673 megabytes
-    Info: Processing ended: Wed Apr 03 23:41:01 2019
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:04
+    Info (21061): Implemented 2447 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 331 warnings
+    Info: Peak virtual memory: 4681 megabytes
+    Info: Processing ended: Thu Apr 04 00:11:32 2019
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:06
 
 

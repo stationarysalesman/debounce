@@ -8,7 +8,8 @@
 
 module lcd_thing	(
 							clk,	
-							fraction,
+							fraction_tens,
+							fraction_ones,
 							start,
 							time_vec1,
 							time_vec2,
@@ -23,7 +24,8 @@ module lcd_thing	(
 						);
 					
 input						clk;
-input					fraction;
+input					fraction_tens;
+input					fraction_ones;
 input					start;
 input 				time_vec1;
 input 				time_vec2;
@@ -43,7 +45,8 @@ inout						data_out;
 parameter	preset_val 	= 0;
 parameter 	counter_max = 50000000;
 
-wire			[7:0] 	fraction;
+wire			[7:0] 	fraction_tens;
+wire			[7:0]		fraction_ones;
 wire						start;
 wire 			[7:0]		time_vec1;
 wire 			[7:0]		time_vec2;
@@ -90,8 +93,8 @@ Datas[13]  =  8'h6E;   	//-- n --
 Datas[14]  =  8'h3A;   	//-- : --
 Datas[15]  =  8'h20;   	//--   --
 
-Datas[16]  =  8'h30;   	//-- 1 --
-Datas[17]  =  8'h20;   	//--   --
+Datas[16]  =  8'h20;   	//--   --
+Datas[17]  =  8'h30;   	//-- 0  --
 Datas[18]  =  8'h20;   	//--   --
 
 Datas[19]  =  8'h20;   	//--   --
@@ -124,7 +127,8 @@ begin
 	
 	if (flag)
 	begin
-		Datas[16] <= time_vec5;
+		Datas[16] <= fraction_tens;
+		Datas[17] <= fraction_ones;
 		Datas[23] <= time_vec1;
 		Datas[24] <= time_vec2;
 		Datas[25] <= time_vec3;

@@ -13,7 +13,9 @@ module timer_thing	(
 							time_vec2,
 							time_vec3,
 							time_vec4,
-							time_vec5
+							time_vec5,
+							fraction_tens,
+							fraction_ones
 						);
 					
 input						clk;
@@ -22,7 +24,9 @@ output					time_vec1;
 output					time_vec2;
 output					time_vec3;
 output					time_vec4;
-output					time_vec5;		
+output					time_vec5;
+output					fraction_tens;
+output					fraction_ones;	
 
 //=======================================================
 //  REG/WIRE declarations
@@ -47,6 +51,10 @@ reg [3:0] minutes_tens = 0;
 reg [3:0] minutes_ones = 0;
 reg [3:0] seconds_tens = 0;
 reg [3:0] seconds_ones = 0;
+
+// the fraction number
+reg [7:0] fraction_tens = 0;
+reg [7:0] fraction_ones = 0;
 //=======================================================
 //  Structural coding
 //=======================================================
@@ -74,6 +82,8 @@ begin
 	minutes_ones <= minutes % 10;
 	seconds_tens <= seconds / 10;
 	seconds_ones <= seconds % 10;
+	fraction_tens <= 8'h30 | ((elapsed_time / 15) / 10);
+	fraction_ones <= 8'h30 | ((elapsed_time / 15) % 10);
 end
 
 always @(posedge clk)
