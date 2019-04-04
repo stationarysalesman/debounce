@@ -206,7 +206,8 @@ inout	[31:0]	GPIO1_D;				//	GPIO Connection 1 Data Bus
 //=======================================================
 wire	[2:0]	BUTTON; // Button after debounce
 
-
+reg [7:0] FRACTION; // fraction number
+wire [7:0] TIME_VEC[1:5]; // will hold hex codes for timer
 //=======================================================
 //  Button Debounce Circit 
 //=======================================================
@@ -235,13 +236,24 @@ button_debouncer	button_debouncer_inst2(
 	.data_out(BUTTON[2])			
 	);
 
+	/*
 led_thing led_thing_inst0(
 	.clk(CLOCK_50),
-	.data_out(HEX1_DP)
+	.switches(SW),
+	.led_out(LEDG),
+	.fraction(FRACTION)
 	);
-	
+*/
+
 lcd_thing lcd_thing_inst0(
 	.clk(CLOCK_50),
+	.fraction(FRACTION),
+	.start(SW[0]),
+	.time_vec1(TIME_VEC[1]),
+	.time_vec2(TIME_VEC[2]),
+	.time_vec3(TIME_VEC[3]),
+	.time_vec4(TIME_VEC[4]),
+	.time_vec5(TIME_VEC[5]),
 	.data_out_en(LCD_EN),
 	.data_out_on(LCD_BLON),
 	.data_out_rs(LCD_RS),
@@ -249,6 +261,23 @@ lcd_thing lcd_thing_inst0(
 	.data_out(LCD_DATA)
 	);
 
+timer_thing timer_thing_inst0(
+	.clk(CLOCK_50),
+	.start(SW[0]),
+	.time_vec1(TIME_VEC[1]),
+	.time_vec2(TIME_VEC[2]),
+	.time_vec3(TIME_VEC[3]),
+	.time_vec4(TIME_VEC[4]),
+	.time_vec5(TIME_VEC[5])
+	);
+	
+	/*
+button_test button_test_inst0(
+	.clk(CLOCK_50),
+	.button(BUTTON[0]),
+	.ledg(LEDG[5])
+	);
+	*/
 //=======================================================
 //  Structural coding
 //=======================================================

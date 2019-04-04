@@ -8,53 +8,37 @@
 
 module led_thing	(
 							clk,	
-							data_out
+							switches,
+							led_out,
+							fraction
 						);
 					
 input						clk;
-output						data_out;
-									
+input						switches;
+output					led_out;
+output					fraction;		
 
 //=======================================================
 //  REG/WIRE declarations
 //=======================================================
 parameter	preset_val 	= 0;
-parameter 	counter_max = 25000000; 
+parameter 	counter_max = 50000000; 
 
-
-reg						data_out;									
-reg			[26:0]		counter = 0;
-reg						val = 0;
-reg						ck_stb = 0;
+wire			[9:0]		switches;
+reg			[9:0]		led_out;
+reg 			[7:0] 	fraction;
 //=======================================================
 //  Structural coding
 //=======================================================
 
 always @(posedge clk)
-	ck_stb <= (counter == counter_max-1'b1);
-
-always @(posedge clk)
 begin
-		if (counter == counter_max)
-		begin
-			counter <= 0;
-		end
-		else
-		begin
-			counter <= counter + 1'b1;
-		end
-		
-end
-
-always	@(posedge clk)
-begin
-	if (ck_stb)
-	begin
-		val <= !val;
-	end
-	
-	data_out		<=	val;
-	
+	if (switches[5]) fraction <= 8'h35;
+	else if (switches[4]) fraction <= 8'h34;
+	else if (switches[3]) fraction <= 8'h33;
+	else if (switches[2]) fraction <= 8'h32;
+	else if (switches[1]) fraction <= 8'h31;
+	else fraction <= 8'h30;
 end
 			
 				

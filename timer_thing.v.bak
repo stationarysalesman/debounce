@@ -1,0 +1,42 @@
+// --------------------------------------------------------------------
+// Copyright (c) 2019 by Tyler Camp
+// --------------------------------------------------------------------
+//
+// he make display go BPOIEPEPROIJ
+//
+//
+
+module timer_thing	(
+							clk,	
+							start,
+							time_vec
+						);
+					
+input						clk;
+input 					start;
+output					time_vec;		
+
+//=======================================================
+//  REG/WIRE declarations
+//=======================================================
+parameter	preset_val 	= 0;
+parameter 	counter_max = 50000000; 
+
+reg 			[7:0] 	time_vec[1:5];
+//=======================================================
+//  Structural coding
+//=======================================================
+
+always @(posedge clk)
+
+always @(posedge clk)
+begin
+	if (counter == counter_max)
+		counter <= 0;
+	else 
+		counter <= counter + 1'b1;
+end
+			
+				
+
+endmodule
