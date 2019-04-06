@@ -275,13 +275,10 @@ timer_thing timer_thing_inst0(
 	.fraction_ones(FRACTION_ONES)
 	);
 	
-	/*
-button_test button_test_inst0(
+gpio_thing gpio_thing_inst0(
 	.clk(CLOCK_50),
-	.button(BUTTON[0]),
-	.ledg(LEDG[5])
+	.gpio(GPIO0_D[0])
 	);
-	*/
 //=======================================================
 //  Structural coding
 //=======================================================

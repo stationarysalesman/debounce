@@ -1,5 +1,5 @@
 |DE0_TOP
-CLOCK_50 => CLOCK_50.IN5
+CLOCK_50 => CLOCK_50.IN6
 CLOCK_50_2 => ~NO_FANOUT~
 ORG_BUTTON[0] => ORG_BUTTON[0].IN1
 ORG_BUTTON[1] => ORG_BUTTON[1].IN1
@@ -183,7 +183,7 @@ GPIO0_CLKIN[0] => ~NO_FANOUT~
 GPIO0_CLKIN[1] => ~NO_FANOUT~
 GPIO0_CLKOUT[0] << <GND>
 GPIO0_CLKOUT[1] << <GND>
-GPIO0_D[0] <> <UNC>
+GPIO0_D[0] <> gpio_thing:gpio_thing_inst0.gpio
 GPIO0_D[1] <> <UNC>
 GPIO0_D[2] <> <UNC>
 GPIO0_D[3] <> <UNC>
@@ -829,5 +829,61 @@ fraction_ones[4] <= fraction_ones[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 fraction_ones[5] <= fraction_ones[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 fraction_ones[6] <= fraction_ones[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 fraction_ones[7] <= fraction_ones[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE0_TOP|gpio_thing:gpio_thing_inst0
+clk => counter_max[0].CLK
+clk => counter_max[1].CLK
+clk => counter_max[2].CLK
+clk => counter_max[3].CLK
+clk => counter_max[4].CLK
+clk => counter_max[5].CLK
+clk => counter_max[6].CLK
+clk => counter_max[7].CLK
+clk => counter_max[8].CLK
+clk => counter_max[9].CLK
+clk => counter_max[10].CLK
+clk => counter_max[11].CLK
+clk => counter_max[12].CLK
+clk => counter_max[13].CLK
+clk => counter_max[14].CLK
+clk => counter_max[15].CLK
+clk => gpio~reg0.CLK
+clk => counter3[0].CLK
+clk => counter3[1].CLK
+clk => counter3[2].CLK
+clk => counter3[3].CLK
+clk => counter3[4].CLK
+clk => counter3[5].CLK
+clk => counter3[6].CLK
+clk => counter3[7].CLK
+clk => counter3[8].CLK
+clk => counter3[9].CLK
+clk => counter3[10].CLK
+clk => counter3[11].CLK
+clk => counter3[12].CLK
+clk => counter3[13].CLK
+clk => counter3[14].CLK
+clk => counter3[15].CLK
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+clk => counter[4].CLK
+clk => counter[5].CLK
+clk => counter[6].CLK
+clk => counter[7].CLK
+clk => counter[8].CLK
+clk => counter[9].CLK
+clk => counter[10].CLK
+clk => counter[11].CLK
+clk => counter[12].CLK
+clk => counter[13].CLK
+clk => counter[14].CLK
+clk => counter[15].CLK
+clk => counter[16].CLK
+clk => clk_stb3.CLK
+clk => clk_stb.CLK
+gpio <> gpio~reg0
 
 
