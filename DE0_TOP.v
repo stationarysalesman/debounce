@@ -209,6 +209,8 @@ wire	[2:0]	BUTTON; // Button after debounce
 wire [7:0] FRACTION_TENS; // fraction number
 wire [7:0] FRACTION_ONES; // two base-ten digits :p
 wire [7:0] TIME_VEC[1:5]; // will hold hex codes for timer
+
+wire MOTOR_SIGNAL; // signal for the motor to move
 //=======================================================
 //  Button Debounce Circit 
 //=======================================================
@@ -272,12 +274,15 @@ timer_thing timer_thing_inst0(
 	.time_vec4(TIME_VEC[4]),
 	.time_vec5(TIME_VEC[5]),
 	.fraction_tens(FRACTION_TENS),
-	.fraction_ones(FRACTION_ONES)
+	.fraction_ones(FRACTION_ONES),
+	.motor_signal(MOTOR_SIGNAL)
 	);
 	
 gpio_thing gpio_thing_inst0(
 	.clk(CLOCK_50),
-	.gpio(GPIO0_D[0])
+	.gpio(GPIO0_D[0]),
+	.gpio_en(GPIO0_D[1]),
+	.motor_signal(MOTOR_SIGNAL)
 	);
 //=======================================================
 //  Structural coding

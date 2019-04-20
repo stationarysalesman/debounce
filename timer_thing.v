@@ -15,7 +15,8 @@ module timer_thing	(
 							time_vec4,
 							time_vec5,
 							fraction_tens,
-							fraction_ones
+							fraction_ones,
+							motor_signal
 						);
 					
 input						clk;
@@ -27,6 +28,7 @@ output					time_vec4;
 output					time_vec5;
 output					fraction_tens;
 output					fraction_ones;	
+output					motor_signal;
 
 //=======================================================
 //  REG/WIRE declarations
@@ -55,6 +57,9 @@ reg [3:0] seconds_ones = 0;
 // the fraction number
 reg [7:0] fraction_tens = 0;
 reg [7:0] fraction_ones = 0;
+
+// signal to turn motor_signal
+reg motor_signal = 0;
 //=======================================================
 //  Structural coding
 //=======================================================
@@ -82,14 +87,19 @@ begin
 	minutes_ones <= minutes % 10;
 	seconds_tens <= seconds / 10;
 	seconds_ones <= seconds % 10;
-	fraction_tens <= 8'h30 | ((elapsed_time / 15) / 10);
-	fraction_ones <= 8'h30 | ((elapsed_time / 15) % 10);
+	fraction_tens <= 8'h30 | ((elapsed_time / 30) / 10);
+	fraction_ones <= 8'h30 | ((elapsed_time / 30) % 10);
 end
 
 always @(posedge clk)
 begin
 	if (start_counting && clk_stb)
+	begin
 		elapsed_time <= elapsed_time + 1'b1;
+		motor_signal <= (elapsed_time != 0) & (elapsed_time % 30 == 0);
+	end
+	else
+		motor_signal <= 0;
 end
 
 always @(posedge clk)

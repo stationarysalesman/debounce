@@ -5,9 +5,10 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|DE0_TOP|timer_thing:timer_thing_inst0|lpm_divide:Div4" CBX_FILE_NAME="lpm_divide_nhm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|DE0_TOP|timer_thing:timer_thing_inst0|lpm_divide:Mod3" CBX_FILE_NAME="lpm_divide_q9m.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|DE0_TOP|timer_thing:timer_thing_inst0|lpm_divide:Div1" CBX_FILE_NAME="lpm_divide_7gm.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|DE0_TOP|timer_thing:timer_thing_inst0|lpm_divide:Div3" CBX_FILE_NAME="lpm_divide_nhm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DE0_TOP|timer_thing:timer_thing_inst0|lpm_divide:Div3" CBX_FILE_NAME="lpm_divide_ohm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|DE0_TOP|timer_thing:timer_thing_inst0|lpm_divide:Mod0" CBX_FILE_NAME="lpm_divide_s9m.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|DE0_TOP|timer_thing:timer_thing_inst0|lpm_divide:Mod2" CBX_FILE_NAME="lpm_divide_b8m.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DE0_TOP|timer_thing:timer_thing_inst0|lpm_divide:Mod4" CBX_FILE_NAME="lpm_divide_u9m.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|DE0_TOP|timer_thing:timer_thing_inst0|lpm_divide:Div2" CBX_FILE_NAME="lpm_divide_8gm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|DE0_TOP|timer_thing:timer_thing_inst0|lpm_divide:Mod1" CBX_FILE_NAME="lpm_divide_a8m.tdf"/>
 	</PROJECT>
